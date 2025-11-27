@@ -12,8 +12,20 @@ from system_pages.admin_account_management.adminCreateAccount import AdminCreate
 from system_pages.admin_account_management.adminConfigureAccount import adminConfigureAccountsPage
 from loginPage import LoginPage
 
+import sys
+import os
+
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
+
+
+def resource_path(relative_path: str) -> str:
+    """ Get absolute path to resource, works for dev and PyInstaller """
+    if hasattr(sys, "_MEIPASS"):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 
 class MainFrame(ctk.CTk):
@@ -34,7 +46,7 @@ class MainFrame(ctk.CTk):
         self.resizable(False, False)
 
         # Load and darken background image
-        img_path = "assets/zarraga-dailyGuardian.jpg"  # adjust if path differs
+        img_path = resource_path("assets/zarraga-dailyGuardian.jpg")
         original_img = Image.open(img_path).resize((window_width, window_height))
         dark_overlay = Image.new("RGBA", original_img.size, (0, 0, 0, 150))
         dark_img = Image.alpha_composite(original_img.convert("RGBA"), dark_overlay)

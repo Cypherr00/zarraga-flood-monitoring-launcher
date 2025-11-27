@@ -10,7 +10,7 @@ class LoginPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
         self.controller = controller
-        self.supabase = controller.supabase  # use shared instance
+        self.supabase = controller.supabase  # shared supabase instance
         self.configure(fg_color=COLORS["background"])
         self.create_ui()
 
@@ -86,7 +86,6 @@ class LoginPage(ctk.CTkFrame):
 
             user = getattr(res, "user", None)
             if user:
-                # store in controller so all pages share it
                 self.controller.current_user = user
                 self.controller.current_user_email = user.email
                 show_info("Login Successful", f"Welcome {user.email}")
@@ -97,4 +96,18 @@ class LoginPage(ctk.CTkFrame):
             show_error("Login Error", str(e))
 
     def forgot_password(self):
-        show_info("Notice", "Function not ready yet.")
+        email = self.email_entry.get().strip()
+        if not email:
+            show_error("Missing Email", "Please enter your email to reset the password.")
+            return
+
+        try:
+            redirect = "https://zarraga-reset-password-vercel.vercel.app/"
+
+            self.supabase.auth.reset_password_for_email(
+                email,
+                options={"redirect_to": redirect}                )
+            show_info("Password Reset", "A password reset link has been sent to your email.")
+            
+        except Exception as e:
+            show_error("Error", str(e))

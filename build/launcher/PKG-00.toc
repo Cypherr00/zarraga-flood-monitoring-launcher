@@ -1,4 +1,5 @@
-('C:\\Users\\DAVEN JERTHRUDE\\Desktop\\Zar\\build\\launcher\\launcher.pkg',
+('C:\\Users\\DAVEN '
+ 'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\launcher.pkg',
  {'BINARY': True,
   'DATA': True,
   'EXECUTABLE': True,
@@ -10,58 +11,59 @@
   'SYMLINK': False},
  [('pyi-contents-directory _internal', '', 'OPTION'),
   ('PYZ-00.pyz',
-   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\Zar\\build\\launcher\\PYZ-00.pyz',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\Desktop\\Zar\\build\\launcher\\localpycs\\struct.pyc',
+   'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\localpycs\\struct.pyc',
    'PYMODULE'),
   ('pyimod01_archive',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\Desktop\\Zar\\build\\launcher\\localpycs\\pyimod01_archive.pyc',
+   'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\localpycs\\pyimod01_archive.pyc',
    'PYMODULE'),
   ('pyimod02_importers',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\Desktop\\Zar\\build\\launcher\\localpycs\\pyimod02_importers.pyc',
+   'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\localpycs\\pyimod02_importers.pyc',
    'PYMODULE'),
   ('pyimod03_ctypes',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\Desktop\\Zar\\build\\launcher\\localpycs\\pyimod03_ctypes.pyc',
+   'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\localpycs\\pyimod03_ctypes.pyc',
    'PYMODULE'),
   ('pyimod04_pywin32',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\Desktop\\Zar\\build\\launcher\\localpycs\\pyimod04_pywin32.pyc',
+   'JERTHRUDE\\Desktop\\zar-clean\\build\\launcher\\localpycs\\pyimod04_pywin32.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
-   'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
    'PYSOURCE'),
   ('pyi_rth_inspect',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('pyi_rth__tkinter',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
    'PYSOURCE'),
   ('pyi_rth_pkgutil',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
    'PYSOURCE'),
   ('pyi_rth_multiprocessing',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('pyi_rth_setuptools',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
    'PYSOURCE'),
   ('pyi_rth_cryptography_openssl',
    'C:\\Users\\DAVEN '
-   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks\\pyi_rth_cryptography_openssl.py',
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks\\pyi_rth_cryptography_openssl.py',
    'PYSOURCE'),
   ('launcher',
-   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\Zar\\launcher.py',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\launcher.py',
    'PYSOURCE')],
  'python313.dll',
  True,

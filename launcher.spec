@@ -5,7 +5,7 @@ a = Analysis(
     ['launcher.py'],
     pathex=[],
     binaries=[],
-    datas=[('utils', 'utils'), ('system_pages', 'system_pages'), ('ZarragaFloodMonitoringAndSimulation', 'ZarragaFloodMonitoringAndSimulation')],
+    datas=[('assets', 'assets'), ('ZarragaFloodMonitoringAndSimulation', 'ZarragaFloodMonitoringAndSimulation')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

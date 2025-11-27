@@ -93,7 +93,7 @@ class MainMenuPage(ctk.CTkFrame):
     def open_digital_twin(self):
         # Resolve correct base path (works in raw Python and PyInstaller build)
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
-        exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "AuthTestApp.exe")
+        exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
 
         if self.digital_twin_process and self.digital_twin_process.poll() is None:
             show_error("Notice", "Digital Twin is already running.")
@@ -108,6 +108,7 @@ class MainMenuPage(ctk.CTkFrame):
         auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
         os.makedirs(auth_dir, exist_ok=True)
         auth_file = os.path.join(auth_dir, "session_auth.txt")
+        ready_file = os.path.join(auth_dir, "ready.txt")
 
         try:
             with open(auth_file, "w", encoding="utf-8") as f:
@@ -128,21 +129,33 @@ class MainMenuPage(ctk.CTkFrame):
             show_info("Launching", "Digital Twin is starting...")
         except Exception as e:
             # Cleanup token if launching fails
-            if os.path.exists(auth_file):
-                os.remove(auth_file)
+            for f in [auth_file, ready_file]:
+                if os.path.exists(f):
+                    os.remove(f)
             show_error("Error", f"Failed to open Digital Twin:\n{e}")
             return
 
-        # Auto-remove token after delay (prevent manual unauthorized launching)
-        def cleanup():
-            time.sleep(5)  # Give Unity time to read
+        # Wait for Unity to signal readiness
+        def wait_for_ready():
             try:
-                if os.path.exists(auth_file):
-                    os.remove(auth_file)
-            except:
-                pass
+                timeout = 10  # seconds
+                interval = 0.1
+                elapsed = 0
+                while elapsed < timeout:
+                    if os.path.exists(ready_file):
+                        break
+                    time.sleep(interval)
+                    elapsed += interval
+            finally:
+                # Cleanup token and ready file
+                for f in [auth_file, ready_file]:
+                    if os.path.exists(f):
+                        try:
+                            os.remove(f)
+                        except:
+                            pass
 
-        threading.Thread(target=cleanup, daemon=True).start()
+        threading.Thread(target=wait_for_ready, daemon=True).start()
 
     def open_settings(self):
         go_to_page(self.controller, SystemSettingsPage)
