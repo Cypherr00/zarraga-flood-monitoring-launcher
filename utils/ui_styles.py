@@ -1,17 +1,17 @@
-# File: utils/ui_styles.py
-
 import customtkinter as ctk
 
 # === Colors ===
-PRIMARY_COLOR = "#00bfff"        # Accent blue
-BACKGROUND_COLOR = "#0d0d0d"     # Main dark background
-SECONDARY_BG = "#1a1a1a"         # Frame color
-TEXT_COLOR = "#ffffff"
-SUBTEXT_COLOR = "#7f8c8d"
-DANGER_COLOR = "#c0392b"
-BUTTON_HOVER_DANGER = "#a93226"
-BUTTON_NORMAL = "#34495e"
-BUTTON_HOVER = "#2c3e50"
+PRIMARY_COLOR = "#0078ff"        # Accent blue
+BACKGROUND_COLOR = "#ffffff"     # Main light background
+SECONDARY_BG = "#f2f2f2"         # Light frame background
+TEXT_COLOR = "#0d0d0d"           # Almost black text
+SUBTEXT_COLOR = "#6f7b86"        # Soft grey
+DANGER_COLOR = "#d9534f"         # Light-theme friendly danger red
+BUTTON_HOVER_DANGER = "#c9302c"
+
+# Neutral buttons for light theme
+BUTTON_NORMAL = "#e0e0e0"        # Light grey button background
+BUTTON_HOVER = "#c8c8c8"         # Slightly darker hover
 
 # === Fonts ===
 def title_font(size=24):
@@ -19,7 +19,6 @@ def title_font(size=24):
     try:
         return ctk.CTkFont(size=size, weight="bold")
     except RuntimeError:
-        # If called too early, return None (safe fallback)
         return None
 
 def label_font(size=16):
@@ -47,6 +46,7 @@ def styled_button(master, text, command, color=BUTTON_NORMAL,
         fg_color=color,
         hover_color=hover_color,
         font=label_font(16) or ("Arial", 14),
+        text_color=TEXT_COLOR,
         command=command
     )
 
@@ -61,7 +61,7 @@ COLORS = {
     "danger_hover": BUTTON_HOVER_DANGER,
     "button": BUTTON_NORMAL,
     "button_hover": BUTTON_HOVER,
-    "divider": "#2f2f2f",
+    "divider": "#d0d0d0",         # light divider line
 }
 
 # === Font map (lazy creation) ===

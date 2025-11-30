@@ -1,0 +1,4184 @@
+('C:\\Users\\DAVEN '
+ 'JERTHRUDE\\Desktop\\zar-clean\\build\\ZarragaFloodMonitoring\\PYZ-00.pyz',
+ [('PIL',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL.AvifImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\AvifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageMath',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageMath.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._typing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\_typing.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_colorize',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_colorize.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('_distutils_hack',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\_distutils_hack\\__init__.py',
+   'PYMODULE'),
+  ('_distutils_hack.override',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\_distutils_hack\\override.py',
+   'PYMODULE'),
+  ('_ios_support',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_ios_support.py',
+   'PYMODULE'),
+  ('_opcode_metadata',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_opcode_metadata.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('_pydatetime',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pydatetime.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('_pyrepl',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\__init__.py',
+   'PYMODULE'),
+  ('_pyrepl._minimal_curses',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\_minimal_curses.py',
+   'PYMODULE'),
+  ('_pyrepl._threading_handler',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\_threading_handler.py',
+   'PYMODULE'),
+  ('_pyrepl.base_eventqueue',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\base_eventqueue.py',
+   'PYMODULE'),
+  ('_pyrepl.commands',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\commands.py',
+   'PYMODULE'),
+  ('_pyrepl.completing_reader',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\completing_reader.py',
+   'PYMODULE'),
+  ('_pyrepl.console',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\console.py',
+   'PYMODULE'),
+  ('_pyrepl.curses',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\curses.py',
+   'PYMODULE'),
+  ('_pyrepl.fancy_termios',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\fancy_termios.py',
+   'PYMODULE'),
+  ('_pyrepl.historical_reader',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\historical_reader.py',
+   'PYMODULE'),
+  ('_pyrepl.input',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\input.py',
+   'PYMODULE'),
+  ('_pyrepl.keymap',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\keymap.py',
+   'PYMODULE'),
+  ('_pyrepl.main',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\main.py',
+   'PYMODULE'),
+  ('_pyrepl.pager',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\pager.py',
+   'PYMODULE'),
+  ('_pyrepl.reader',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\reader.py',
+   'PYMODULE'),
+  ('_pyrepl.readline',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\readline.py',
+   'PYMODULE'),
+  ('_pyrepl.simple_interact',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\simple_interact.py',
+   'PYMODULE'),
+  ('_pyrepl.trace',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\trace.py',
+   'PYMODULE'),
+  ('_pyrepl.types',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\types.py',
+   'PYMODULE'),
+  ('_pyrepl.unix_console',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\unix_console.py',
+   'PYMODULE'),
+  ('_pyrepl.unix_eventqueue',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\unix_eventqueue.py',
+   'PYMODULE'),
+  ('_pyrepl.utils',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\utils.py',
+   'PYMODULE'),
+  ('_pyrepl.windows_console',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\windows_console.py',
+   'PYMODULE'),
+  ('_pyrepl.windows_eventqueue',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\windows_eventqueue.py',
+   'PYMODULE'),
+  ('_sitebuiltins',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_sitebuiltins.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_strptime.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('annotated_types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\annotated_types\\__init__.py',
+   'PYMODULE'),
+  ('anyio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\__init__.py',
+   'PYMODULE'),
+  ('anyio._backends',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('anyio._backends._asyncio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py',
+   'PYMODULE'),
+  ('anyio._backends._trio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_backends\\_trio.py',
+   'PYMODULE'),
+  ('anyio._core',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\__init__.py',
+   'PYMODULE'),
+  ('anyio._core._asyncio_selector_thread',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_asyncio_selector_thread.py',
+   'PYMODULE'),
+  ('anyio._core._contextmanagers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_contextmanagers.py',
+   'PYMODULE'),
+  ('anyio._core._eventloop',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_eventloop.py',
+   'PYMODULE'),
+  ('anyio._core._exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('anyio._core._fileio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_fileio.py',
+   'PYMODULE'),
+  ('anyio._core._resources',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_resources.py',
+   'PYMODULE'),
+  ('anyio._core._signals',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_signals.py',
+   'PYMODULE'),
+  ('anyio._core._sockets',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_sockets.py',
+   'PYMODULE'),
+  ('anyio._core._streams',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_streams.py',
+   'PYMODULE'),
+  ('anyio._core._subprocesses',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_subprocesses.py',
+   'PYMODULE'),
+  ('anyio._core._synchronization',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_synchronization.py',
+   'PYMODULE'),
+  ('anyio._core._tasks',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_tasks.py',
+   'PYMODULE'),
+  ('anyio._core._tempfile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_tempfile.py',
+   'PYMODULE'),
+  ('anyio._core._testing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_testing.py',
+   'PYMODULE'),
+  ('anyio._core._typedattr',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\_core\\_typedattr.py',
+   'PYMODULE'),
+  ('anyio.abc',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\__init__.py',
+   'PYMODULE'),
+  ('anyio.abc._eventloop',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_eventloop.py',
+   'PYMODULE'),
+  ('anyio.abc._resources',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_resources.py',
+   'PYMODULE'),
+  ('anyio.abc._sockets',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_sockets.py',
+   'PYMODULE'),
+  ('anyio.abc._streams',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_streams.py',
+   'PYMODULE'),
+  ('anyio.abc._subprocesses',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_subprocesses.py',
+   'PYMODULE'),
+  ('anyio.abc._tasks',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_tasks.py',
+   'PYMODULE'),
+  ('anyio.abc._testing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\abc\\_testing.py',
+   'PYMODULE'),
+  ('anyio.from_thread',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\from_thread.py',
+   'PYMODULE'),
+  ('anyio.lowlevel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\lowlevel.py',
+   'PYMODULE'),
+  ('anyio.streams',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\streams\\__init__.py',
+   'PYMODULE'),
+  ('anyio.streams.memory',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\streams\\memory.py',
+   'PYMODULE'),
+  ('anyio.streams.stapled',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\streams\\stapled.py',
+   'PYMODULE'),
+  ('anyio.streams.tls',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\streams\\tls.py',
+   'PYMODULE'),
+  ('anyio.to_thread',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\anyio\\to_thread.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\argparse.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ast.py',
+   'PYMODULE'),
+  ('asyncio',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.mixins',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\mixins.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.timeouts',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\timeouts.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('backports',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\base64.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\bisect.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\bz2.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\calendar.py',
+   'PYMODULE'),
+  ('certifi',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\code.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\codeop.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\colorsys.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\configparser.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\copy.py',
+   'PYMODULE'),
+  ('cryptography',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.__about__',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\__about__.py',
+   'PYMODULE'),
+  ('cryptography.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\exceptions.py',
+   'PYMODULE'),
+  ('cryptography.hazmat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat._oid',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\_oid.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\backends\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.backend',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\backend.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl._conditional',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\_conditional.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl.binding',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\binding.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers.algorithms',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\algorithms.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._asymmetric',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\_asymmetric.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._cipheralgorithm',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\_cipheralgorithm.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._serialization',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\_serialization.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.dsa',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\dsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ec',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ec.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ed25519',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ed25519.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ed448',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ed448.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.padding',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\padding.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.rsa',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\rsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\utils.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.algorithms',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\algorithms.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.base',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.modes',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\modes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.hashes',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\hashes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.base',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.ssh',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\ssh.py',
+   'PYMODULE'),
+  ('cryptography.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\cryptography\\utils.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\csv.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\_aix.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('curses',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\curses\\__init__.py',
+   'PYMODULE'),
+  ('curses.has_key',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\curses\\has_key.py',
+   'PYMODULE'),
+  ('customtkinter',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_input_dialog',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\ctk_input_dialog.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_tk',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\ctk_tk.py',
+   'PYMODULE'),
+  ('customtkinter.windows.ctk_toplevel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\ctk_toplevel.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode.appearance_mode_base_class',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\appearance_mode_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.appearance_mode.appearance_mode_tracker',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\appearance_mode\\appearance_mode_tracker.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering.ctk_canvas',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\ctk_canvas.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_rendering.draw_engine',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_rendering\\draw_engine.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes.ctk_base_class',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\ctk_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.core_widget_classes.dropdown_menu',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\core_widget_classes\\dropdown_menu.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_button',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_button.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_checkbox',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_checkbox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_combobox',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_combobox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_entry',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_entry.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_frame',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_frame.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_label',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_label.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_optionmenu',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_optionmenu.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_progressbar',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_progressbar.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_radiobutton',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_radiobutton.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_scrollable_frame',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_scrollable_frame.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_scrollbar',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_scrollbar.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_segmented_button',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_segmented_button.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_slider',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_slider.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_switch',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_switch.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_tabview',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_tabview.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.ctk_textbox',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\ctk_textbox.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font.ctk_font',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\ctk_font.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.font.font_manager',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\font\\font_manager.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.image',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\image\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.image.ctk_image',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\image\\ctk_image.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling.scaling_base_class',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\scaling_base_class.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.scaling.scaling_tracker',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\scaling\\scaling_tracker.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.theme',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\theme\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.theme.theme_manager',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\theme\\theme_manager.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.utility',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\utility\\__init__.py',
+   'PYMODULE'),
+  ('customtkinter.windows.widgets.utility.utility_functions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\customtkinter\\windows\\widgets\\utility\\utility_functions.py',
+   'PYMODULE'),
+  ('darkdetect',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\darkdetect\\__init__.py',
+   'PYMODULE'),
+  ('darkdetect._dummy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\darkdetect\\_dummy.py',
+   'PYMODULE'),
+  ('darkdetect._linux_detect',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\darkdetect\\_linux_detect.py',
+   'PYMODULE'),
+  ('darkdetect._mac_detect',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\darkdetect\\_mac_detect.py',
+   'PYMODULE'),
+  ('darkdetect._windows_detect',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\darkdetect\\_windows_detect.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\decimal.py',
+   'PYMODULE'),
+  ('deprecation',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\deprecation.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\difflib.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\dis.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\fractions.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ftplib.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\getopt.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\getpass.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\gettext.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\glob.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\gzip.py',
+   'PYMODULE'),
+  ('h11',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\__init__.py',
+   'PYMODULE'),
+  ('h11._abnf',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_abnf.py',
+   'PYMODULE'),
+  ('h11._connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_connection.py',
+   'PYMODULE'),
+  ('h11._events',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_events.py',
+   'PYMODULE'),
+  ('h11._headers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_headers.py',
+   'PYMODULE'),
+  ('h11._readers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_readers.py',
+   'PYMODULE'),
+  ('h11._receivebuffer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_receivebuffer.py',
+   'PYMODULE'),
+  ('h11._state',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_state.py',
+   'PYMODULE'),
+  ('h11._util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_util.py',
+   'PYMODULE'),
+  ('h11._version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_version.py',
+   'PYMODULE'),
+  ('h11._writers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h11\\_writers.py',
+   'PYMODULE'),
+  ('h2',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\__init__.py',
+   'PYMODULE'),
+  ('h2.config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\config.py',
+   'PYMODULE'),
+  ('h2.connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\connection.py',
+   'PYMODULE'),
+  ('h2.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\errors.py',
+   'PYMODULE'),
+  ('h2.events',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\events.py',
+   'PYMODULE'),
+  ('h2.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\exceptions.py',
+   'PYMODULE'),
+  ('h2.frame_buffer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\frame_buffer.py',
+   'PYMODULE'),
+  ('h2.settings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\settings.py',
+   'PYMODULE'),
+  ('h2.stream',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\stream.py',
+   'PYMODULE'),
+  ('h2.utilities',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\utilities.py',
+   'PYMODULE'),
+  ('h2.windows',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\h2\\windows.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\hashlib.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\hmac.py',
+   'PYMODULE'),
+  ('hpack',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\__init__.py',
+   'PYMODULE'),
+  ('hpack.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\exceptions.py',
+   'PYMODULE'),
+  ('hpack.hpack',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\hpack.py',
+   'PYMODULE'),
+  ('hpack.huffman',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\huffman.py',
+   'PYMODULE'),
+  ('hpack.huffman_constants',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\huffman_constants.py',
+   'PYMODULE'),
+  ('hpack.huffman_table',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\huffman_table.py',
+   'PYMODULE'),
+  ('hpack.struct',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\struct.py',
+   'PYMODULE'),
+  ('hpack.table',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hpack\\table.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\html\\entities.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('httpcore',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\__init__.py',
+   'PYMODULE'),
+  ('httpcore._api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_api.py',
+   'PYMODULE'),
+  ('httpcore._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\__init__.py',
+   'PYMODULE'),
+  ('httpcore._async.connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\connection.py',
+   'PYMODULE'),
+  ('httpcore._async.connection_pool',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\connection_pool.py',
+   'PYMODULE'),
+  ('httpcore._async.http11',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\http11.py',
+   'PYMODULE'),
+  ('httpcore._async.http2',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\http2.py',
+   'PYMODULE'),
+  ('httpcore._async.http_proxy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\http_proxy.py',
+   'PYMODULE'),
+  ('httpcore._async.interfaces',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\interfaces.py',
+   'PYMODULE'),
+  ('httpcore._async.socks_proxy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_async\\socks_proxy.py',
+   'PYMODULE'),
+  ('httpcore._backends',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('httpcore._backends.anyio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\anyio.py',
+   'PYMODULE'),
+  ('httpcore._backends.auto',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\auto.py',
+   'PYMODULE'),
+  ('httpcore._backends.base',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\base.py',
+   'PYMODULE'),
+  ('httpcore._backends.mock',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\mock.py',
+   'PYMODULE'),
+  ('httpcore._backends.sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\sync.py',
+   'PYMODULE'),
+  ('httpcore._backends.trio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_backends\\trio.py',
+   'PYMODULE'),
+  ('httpcore._exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_exceptions.py',
+   'PYMODULE'),
+  ('httpcore._models',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_models.py',
+   'PYMODULE'),
+  ('httpcore._ssl',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_ssl.py',
+   'PYMODULE'),
+  ('httpcore._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('httpcore._sync.connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\connection.py',
+   'PYMODULE'),
+  ('httpcore._sync.connection_pool',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\connection_pool.py',
+   'PYMODULE'),
+  ('httpcore._sync.http11',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\http11.py',
+   'PYMODULE'),
+  ('httpcore._sync.http2',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\http2.py',
+   'PYMODULE'),
+  ('httpcore._sync.http_proxy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\http_proxy.py',
+   'PYMODULE'),
+  ('httpcore._sync.interfaces',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\interfaces.py',
+   'PYMODULE'),
+  ('httpcore._sync.socks_proxy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_sync\\socks_proxy.py',
+   'PYMODULE'),
+  ('httpcore._synchronization',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_synchronization.py',
+   'PYMODULE'),
+  ('httpcore._trace',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_trace.py',
+   'PYMODULE'),
+  ('httpcore._utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpcore\\_utils.py',
+   'PYMODULE'),
+  ('httpx',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\__init__.py',
+   'PYMODULE'),
+  ('httpx.__version__',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\__version__.py',
+   'PYMODULE'),
+  ('httpx._api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_api.py',
+   'PYMODULE'),
+  ('httpx._auth',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_auth.py',
+   'PYMODULE'),
+  ('httpx._client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_client.py',
+   'PYMODULE'),
+  ('httpx._config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_config.py',
+   'PYMODULE'),
+  ('httpx._content',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_content.py',
+   'PYMODULE'),
+  ('httpx._decoders',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_decoders.py',
+   'PYMODULE'),
+  ('httpx._exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_exceptions.py',
+   'PYMODULE'),
+  ('httpx._main',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_main.py',
+   'PYMODULE'),
+  ('httpx._models',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_models.py',
+   'PYMODULE'),
+  ('httpx._multipart',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_multipart.py',
+   'PYMODULE'),
+  ('httpx._status_codes',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_status_codes.py',
+   'PYMODULE'),
+  ('httpx._transports',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_transports\\__init__.py',
+   'PYMODULE'),
+  ('httpx._transports.asgi',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_transports\\asgi.py',
+   'PYMODULE'),
+  ('httpx._transports.base',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_transports\\base.py',
+   'PYMODULE'),
+  ('httpx._transports.default',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_transports\\default.py',
+   'PYMODULE'),
+  ('httpx._transports.mock',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_transports\\mock.py',
+   'PYMODULE'),
+  ('httpx._transports.wsgi',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_transports\\wsgi.py',
+   'PYMODULE'),
+  ('httpx._types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_types.py',
+   'PYMODULE'),
+  ('httpx._urlparse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_urlparse.py',
+   'PYMODULE'),
+  ('httpx._urls',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_urls.py',
+   'PYMODULE'),
+  ('httpx._utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\httpx\\_utils.py',
+   'PYMODULE'),
+  ('hyperframe',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hyperframe\\__init__.py',
+   'PYMODULE'),
+  ('hyperframe.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hyperframe\\exceptions.py',
+   'PYMODULE'),
+  ('hyperframe.flags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hyperframe\\flags.py',
+   'PYMODULE'),
+  ('hyperframe.frame',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\hyperframe\\frame.py',
+   'PYMODULE'),
+  ('idna',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._functional',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_functional.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\inspect.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('jaraco', '-', 'PYMODULE'),
+  ('json',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('jwt',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\__init__.py',
+   'PYMODULE'),
+  ('jwt.algorithms',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\algorithms.py',
+   'PYMODULE'),
+  ('jwt.api_jwk',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\api_jwk.py',
+   'PYMODULE'),
+  ('jwt.api_jws',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\api_jws.py',
+   'PYMODULE'),
+  ('jwt.api_jwt',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\api_jwt.py',
+   'PYMODULE'),
+  ('jwt.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\exceptions.py',
+   'PYMODULE'),
+  ('jwt.jwk_set_cache',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\jwk_set_cache.py',
+   'PYMODULE'),
+  ('jwt.jwks_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\jwks_client.py',
+   'PYMODULE'),
+  ('jwt.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\types.py',
+   'PYMODULE'),
+  ('jwt.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\utils.py',
+   'PYMODULE'),
+  ('jwt.warnings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\jwt\\warnings.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('loginPage',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\loginPage.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\lzma.py',
+   'PYMODULE'),
+  ('mainFrame',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\mainFrame.py',
+   'PYMODULE'),
+  ('mainMenu',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\mainMenu.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\mimetypes.py',
+   'PYMODULE'),
+  ('multidict',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\multidict\\__init__.py',
+   'PYMODULE'),
+  ('multidict._abc',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\multidict\\_abc.py',
+   'PYMODULE'),
+  ('multidict._compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\multidict\\_compat.py',
+   'PYMODULE'),
+  ('multidict._multidict_py',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\multidict\\_multidict_py.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('navigation',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\navigation.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\netrc.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\numbers.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('packaging',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('packaging._elffile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('packaging._manylinux',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('packaging._musllinux',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('packaging._parser',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('packaging._structures',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('packaging._tokenizer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('packaging.licenses',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\licenses\\__init__.py',
+   'PYMODULE'),
+  ('packaging.licenses._spdx',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\licenses\\_spdx.py',
+   'PYMODULE'),
+  ('packaging.markers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\markers.py',
+   'PYMODULE'),
+  ('packaging.requirements',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('packaging.specifiers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('packaging.tags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\tags.py',
+   'PYMODULE'),
+  ('packaging.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\utils.py',
+   'PYMODULE'),
+  ('packaging.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\__init__.py',
+   'PYMODULE'),
+  ('pathlib._abc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_abc.py',
+   'PYMODULE'),
+  ('pathlib._local',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_local.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pkgutil.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\platform.py',
+   'PYMODULE'),
+  ('postgrest',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\__init__.py',
+   'PYMODULE'),
+  ('postgrest._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\_async\\__init__.py',
+   'PYMODULE'),
+  ('postgrest._async.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\_async\\client.py',
+   'PYMODULE'),
+  ('postgrest._async.request_builder',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\_async\\request_builder.py',
+   'PYMODULE'),
+  ('postgrest._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('postgrest._sync.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\_sync\\client.py',
+   'PYMODULE'),
+  ('postgrest._sync.request_builder',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\_sync\\request_builder.py',
+   'PYMODULE'),
+  ('postgrest.base_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\base_client.py',
+   'PYMODULE'),
+  ('postgrest.base_request_builder',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\base_request_builder.py',
+   'PYMODULE'),
+  ('postgrest.constants',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\constants.py',
+   'PYMODULE'),
+  ('postgrest.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\exceptions.py',
+   'PYMODULE'),
+  ('postgrest.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\types.py',
+   'PYMODULE'),
+  ('postgrest.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\utils.py',
+   'PYMODULE'),
+  ('postgrest.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\postgrest\\version.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pprint.py',
+   'PYMODULE'),
+  ('propcache',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\propcache\\__init__.py',
+   'PYMODULE'),
+  ('propcache._helpers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\propcache\\_helpers.py',
+   'PYMODULE'),
+  ('propcache._helpers_py',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\propcache\\_helpers_py.py',
+   'PYMODULE'),
+  ('propcache.api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\propcache\\api.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('pydantic',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal._config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_config.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_metadata',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_core_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_core_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._dataclasses',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_dataclasses.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators_v1',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators_v1.py',
+   'PYMODULE'),
+  ('pydantic._internal._discriminated_union',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_discriminated_union.py',
+   'PYMODULE'),
+  ('pydantic._internal._docs_extraction',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_docs_extraction.py',
+   'PYMODULE'),
+  ('pydantic._internal._fields',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_fields.py',
+   'PYMODULE'),
+  ('pydantic._internal._forward_ref',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_forward_ref.py',
+   'PYMODULE'),
+  ('pydantic._internal._generate_schema',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py',
+   'PYMODULE'),
+  ('pydantic._internal._generics',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_generics.py',
+   'PYMODULE'),
+  ('pydantic._internal._git',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_git.py',
+   'PYMODULE'),
+  ('pydantic._internal._import_utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_import_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._internal_dataclass',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py',
+   'PYMODULE'),
+  ('pydantic._internal._known_annotated_metadata',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_known_annotated_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._mock_val_ser',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_mock_val_ser.py',
+   'PYMODULE'),
+  ('pydantic._internal._model_construction',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py',
+   'PYMODULE'),
+  ('pydantic._internal._namespace_utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_namespace_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._repr',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_repr.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_gather',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_gather.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_generation_shared',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_generation_shared.py',
+   'PYMODULE'),
+  ('pydantic._internal._serializers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_serializers.py',
+   'PYMODULE'),
+  ('pydantic._internal._signature',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_signature.py',
+   'PYMODULE'),
+  ('pydantic._internal._typing_extra',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_typing_extra.py',
+   'PYMODULE'),
+  ('pydantic._internal._utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._validate_call',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_validate_call.py',
+   'PYMODULE'),
+  ('pydantic._internal._validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_validators.py',
+   'PYMODULE'),
+  ('pydantic._migration',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\_migration.py',
+   'PYMODULE'),
+  ('pydantic.alias_generators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\alias_generators.py',
+   'PYMODULE'),
+  ('pydantic.aliases',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\aliases.py',
+   'PYMODULE'),
+  ('pydantic.annotated_handlers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\annotated_handlers.py',
+   'PYMODULE'),
+  ('pydantic.class_validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.color',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\color.py',
+   'PYMODULE'),
+  ('pydantic.config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\config.py',
+   'PYMODULE'),
+  ('pydantic.dataclasses',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.datetime_parse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\datetime_parse.py',
+   'PYMODULE'),
+  ('pydantic.decorator',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.deprecated',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.class_validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\config.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.copy_internals',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\copy_internals.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.decorator',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.json',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\json.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.parse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\parse.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.tools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\tools.py',
+   'PYMODULE'),
+  ('pydantic.env_settings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\env_settings.py',
+   'PYMODULE'),
+  ('pydantic.error_wrappers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\error_wrappers.py',
+   'PYMODULE'),
+  ('pydantic.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\errors.py',
+   'PYMODULE'),
+  ('pydantic.experimental',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\experimental\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.experimental.arguments_schema',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\experimental\\arguments_schema.py',
+   'PYMODULE'),
+  ('pydantic.experimental.missing_sentinel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\experimental\\missing_sentinel.py',
+   'PYMODULE'),
+  ('pydantic.experimental.pipeline',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\experimental\\pipeline.py',
+   'PYMODULE'),
+  ('pydantic.fields',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\fields.py',
+   'PYMODULE'),
+  ('pydantic.functional_serializers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\functional_serializers.py',
+   'PYMODULE'),
+  ('pydantic.functional_validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\functional_validators.py',
+   'PYMODULE'),
+  ('pydantic.generics',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\generics.py',
+   'PYMODULE'),
+  ('pydantic.json',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\json.py',
+   'PYMODULE'),
+  ('pydantic.json_schema',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\json_schema.py',
+   'PYMODULE'),
+  ('pydantic.main',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\main.py',
+   'PYMODULE'),
+  ('pydantic.mypy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\mypy.py',
+   'PYMODULE'),
+  ('pydantic.networks',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\networks.py',
+   'PYMODULE'),
+  ('pydantic.parse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\parse.py',
+   'PYMODULE'),
+  ('pydantic.plugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\plugin\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.plugin._loader',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\plugin\\_loader.py',
+   'PYMODULE'),
+  ('pydantic.plugin._schema_validator',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\plugin\\_schema_validator.py',
+   'PYMODULE'),
+  ('pydantic.root_model',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\root_model.py',
+   'PYMODULE'),
+  ('pydantic.schema',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\schema.py',
+   'PYMODULE'),
+  ('pydantic.tools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\tools.py',
+   'PYMODULE'),
+  ('pydantic.type_adapter',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\type_adapter.py',
+   'PYMODULE'),
+  ('pydantic.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\types.py',
+   'PYMODULE'),
+  ('pydantic.typing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\typing.py',
+   'PYMODULE'),
+  ('pydantic.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\utils.py',
+   'PYMODULE'),
+  ('pydantic.v1',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.v1._hypothesis_plugin',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\_hypothesis_plugin.py',
+   'PYMODULE'),
+  ('pydantic.v1.annotated_types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\annotated_types.py',
+   'PYMODULE'),
+  ('pydantic.v1.class_validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.color',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\color.py',
+   'PYMODULE'),
+  ('pydantic.v1.config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\config.py',
+   'PYMODULE'),
+  ('pydantic.v1.dataclasses',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.v1.datetime_parse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\datetime_parse.py',
+   'PYMODULE'),
+  ('pydantic.v1.decorator',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.v1.env_settings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\env_settings.py',
+   'PYMODULE'),
+  ('pydantic.v1.error_wrappers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\error_wrappers.py',
+   'PYMODULE'),
+  ('pydantic.v1.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\errors.py',
+   'PYMODULE'),
+  ('pydantic.v1.fields',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\fields.py',
+   'PYMODULE'),
+  ('pydantic.v1.generics',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\generics.py',
+   'PYMODULE'),
+  ('pydantic.v1.json',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\json.py',
+   'PYMODULE'),
+  ('pydantic.v1.main',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\main.py',
+   'PYMODULE'),
+  ('pydantic.v1.mypy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\mypy.py',
+   'PYMODULE'),
+  ('pydantic.v1.networks',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\networks.py',
+   'PYMODULE'),
+  ('pydantic.v1.parse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\parse.py',
+   'PYMODULE'),
+  ('pydantic.v1.schema',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\schema.py',
+   'PYMODULE'),
+  ('pydantic.v1.tools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\tools.py',
+   'PYMODULE'),
+  ('pydantic.v1.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\types.py',
+   'PYMODULE'),
+  ('pydantic.v1.typing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\typing.py',
+   'PYMODULE'),
+  ('pydantic.v1.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\utils.py',
+   'PYMODULE'),
+  ('pydantic.v1.validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\v1\\version.py',
+   'PYMODULE'),
+  ('pydantic.validate_call_decorator',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\validate_call_decorator.py',
+   'PYMODULE'),
+  ('pydantic.validators',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\validators.py',
+   'PYMODULE'),
+  ('pydantic.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\version.py',
+   'PYMODULE'),
+  ('pydantic.warnings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic\\warnings.py',
+   'PYMODULE'),
+  ('pydantic_core',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic_core\\__init__.py',
+   'PYMODULE'),
+  ('pydantic_core.core_schema',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\pydantic_core\\core_schema.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pydoc.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\queue.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\quopri.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\random.py',
+   'PYMODULE'),
+  ('realtime',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\__init__.py',
+   'PYMODULE'),
+  ('realtime._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_async\\__init__.py',
+   'PYMODULE'),
+  ('realtime._async.channel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_async\\channel.py',
+   'PYMODULE'),
+  ('realtime._async.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_async\\client.py',
+   'PYMODULE'),
+  ('realtime._async.presence',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_async\\presence.py',
+   'PYMODULE'),
+  ('realtime._async.push',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_async\\push.py',
+   'PYMODULE'),
+  ('realtime._async.timer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_async\\timer.py',
+   'PYMODULE'),
+  ('realtime._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('realtime._sync.channel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_sync\\channel.py',
+   'PYMODULE'),
+  ('realtime._sync.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_sync\\client.py',
+   'PYMODULE'),
+  ('realtime._sync.presence',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\_sync\\presence.py',
+   'PYMODULE'),
+  ('realtime.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\exceptions.py',
+   'PYMODULE'),
+  ('realtime.message',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\message.py',
+   'PYMODULE'),
+  ('realtime.transformers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\transformers.py',
+   'PYMODULE'),
+  ('realtime.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\types.py',
+   'PYMODULE'),
+  ('realtime.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\utils.py',
+   'PYMODULE'),
+  ('realtime.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\realtime\\version.py',
+   'PYMODULE'),
+  ('rlcompleter',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\rlcompleter.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\runpy.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\secrets.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\selectors.py',
+   'PYMODULE'),
+  ('setuptools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._core_metadata',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_core_metadata.py',
+   'PYMODULE'),
+  ('setuptools._discovery',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_discovery.py',
+   'PYMODULE'),
+  ('setuptools._distutils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils._log',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_log.py',
+   'PYMODULE'),
+  ('setuptools._distutils._modified',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_modified.py',
+   'PYMODULE'),
+  ('setuptools._distutils._msvccompiler',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_msvccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.archive_util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.ccompiler',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\ccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.cmd',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\cmd.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.bdist',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build_ext',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_ext.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.sdist',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat.numpy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\numpy.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat.py39',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers', '-', 'PYMODULE'),
+  ('setuptools._distutils.compilers.C', '-', 'PYMODULE'),
+  ('setuptools._distutils.compilers.C.base',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\base.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\errors.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.msvc',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\msvc.py',
+   'PYMODULE'),
+  ('setuptools._distutils.core',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\core.py',
+   'PYMODULE'),
+  ('setuptools._distutils.debug',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\debug.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dir_util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dir_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dist',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\errors.py',
+   'PYMODULE'),
+  ('setuptools._distutils.extension',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\extension.py',
+   'PYMODULE'),
+  ('setuptools._distutils.fancy_getopt',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\fancy_getopt.py',
+   'PYMODULE'),
+  ('setuptools._distutils.file_util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\file_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.filelist',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\filelist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.log',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\log.py',
+   'PYMODULE'),
+  ('setuptools._distutils.spawn',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\spawn.py',
+   'PYMODULE'),
+  ('setuptools._distutils.sysconfig',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\sysconfig.py',
+   'PYMODULE'),
+  ('setuptools._distutils.text_file',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\text_file.py',
+   'PYMODULE'),
+  ('setuptools._distutils.util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\version.py',
+   'PYMODULE'),
+  ('setuptools._distutils.versionpredicate',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\versionpredicate.py',
+   'PYMODULE'),
+  ('setuptools._entry_points',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_entry_points.py',
+   'PYMODULE'),
+  ('setuptools._imp',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_imp.py',
+   'PYMODULE'),
+  ('setuptools._importlib',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_importlib.py',
+   'PYMODULE'),
+  ('setuptools._itertools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_itertools.py',
+   'PYMODULE'),
+  ('setuptools._normalization',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_normalization.py',
+   'PYMODULE'),
+  ('setuptools._path',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_path.py',
+   'PYMODULE'),
+  ('setuptools._reqs',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_reqs.py',
+   'PYMODULE'),
+  ('setuptools._shutil',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_shutil.py',
+   'PYMODULE'),
+  ('setuptools._static',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_static.py',
+   'PYMODULE'),
+  ('setuptools._vendor', '-', 'PYMODULE'),
+  ('setuptools._vendor.backports',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile.compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile.compat.py38',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\py38.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._adapters',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_adapters.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._collections',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_collections.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_compat.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._functools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_functools.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._itertools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_itertools.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._meta',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_meta.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._text',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_text.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat.py311',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py311.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat.py39',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco', '-', 'PYMODULE'),
+  ('setuptools._vendor.jaraco.context',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\context.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco.functools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\functools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco.text',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools.more',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\more.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools.recipes',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\recipes.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._elffile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._manylinux',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._musllinux',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._parser',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._tokenizer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.requirements',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.tags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._parser',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._re',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_re.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_types.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.convert',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\convert.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.pack',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\pack.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.tags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.unpack',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\unpack.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.macosx_libfile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\macosx_libfile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.metadata',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\metadata.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\util.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._elffile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._manylinux',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._musllinux',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._parser',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._structures',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._tokenizer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.markers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.requirements',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.specifiers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.tags',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.wheelfile',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\wheelfile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.compat.py310',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\py310.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.glob',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\glob.py',
+   'PYMODULE'),
+  ('setuptools.archive_util',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools.command',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.command._requirestxt',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\_requirestxt.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_egg',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_wheel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_wheel.py',
+   'PYMODULE'),
+  ('setuptools.command.build',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\build.py',
+   'PYMODULE'),
+  ('setuptools.command.egg_info',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\egg_info.py',
+   'PYMODULE'),
+  ('setuptools.command.sdist',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools.command.setopt',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\command\\setopt.py',
+   'PYMODULE'),
+  ('setuptools.compat',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.compat.py310',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\compat\\py310.py',
+   'PYMODULE'),
+  ('setuptools.compat.py311',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\compat\\py311.py',
+   'PYMODULE'),
+  ('setuptools.compat.py39',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools.config',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.config._apply_pyprojecttoml',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.error_reporting',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\error_reporting.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.extra_validations',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\extra_validations.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.fastjsonschema_exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_exceptions.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.fastjsonschema_validations',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_validations.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.formats',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\formats.py',
+   'PYMODULE'),
+  ('setuptools.config.expand',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\expand.py',
+   'PYMODULE'),
+  ('setuptools.config.pyprojecttoml',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\pyprojecttoml.py',
+   'PYMODULE'),
+  ('setuptools.config.setupcfg',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\config\\setupcfg.py',
+   'PYMODULE'),
+  ('setuptools.depends',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\depends.py',
+   'PYMODULE'),
+  ('setuptools.discovery',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\discovery.py',
+   'PYMODULE'),
+  ('setuptools.dist',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\dist.py',
+   'PYMODULE'),
+  ('setuptools.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\errors.py',
+   'PYMODULE'),
+  ('setuptools.extension',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\extension.py',
+   'PYMODULE'),
+  ('setuptools.glob',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\glob.py',
+   'PYMODULE'),
+  ('setuptools.installer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\installer.py',
+   'PYMODULE'),
+  ('setuptools.logging',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\logging.py',
+   'PYMODULE'),
+  ('setuptools.monkey',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\monkey.py',
+   'PYMODULE'),
+  ('setuptools.msvc',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\msvc.py',
+   'PYMODULE'),
+  ('setuptools.unicode_utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\unicode_utils.py',
+   'PYMODULE'),
+  ('setuptools.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\version.py',
+   'PYMODULE'),
+  ('setuptools.warnings',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\warnings.py',
+   'PYMODULE'),
+  ('setuptools.wheel',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\wheel.py',
+   'PYMODULE'),
+  ('setuptools.windows_support',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\setuptools\\windows_support.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\shlex.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\shutil.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\signal.py',
+   'PYMODULE'),
+  ('site',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site.py',
+   'PYMODULE'),
+  ('sniffio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\sniffio\\__init__.py',
+   'PYMODULE'),
+  ('sniffio._impl',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\sniffio\\_impl.py',
+   'PYMODULE'),
+  ('sniffio._version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\sniffio\\_version.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socket.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('storage3',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\__init__.py',
+   'PYMODULE'),
+  ('storage3._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_async\\__init__.py',
+   'PYMODULE'),
+  ('storage3._async.bucket',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_async\\bucket.py',
+   'PYMODULE'),
+  ('storage3._async.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_async\\client.py',
+   'PYMODULE'),
+  ('storage3._async.file_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_async\\file_api.py',
+   'PYMODULE'),
+  ('storage3._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('storage3._sync.bucket',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_sync\\bucket.py',
+   'PYMODULE'),
+  ('storage3._sync.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_sync\\client.py',
+   'PYMODULE'),
+  ('storage3._sync.file_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\_sync\\file_api.py',
+   'PYMODULE'),
+  ('storage3.constants',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\constants.py',
+   'PYMODULE'),
+  ('storage3.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\exceptions.py',
+   'PYMODULE'),
+  ('storage3.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\types.py',
+   'PYMODULE'),
+  ('storage3.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\utils.py',
+   'PYMODULE'),
+  ('storage3.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\storage3\\version.py',
+   'PYMODULE'),
+  ('strenum',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\strenum\\__init__.py',
+   'PYMODULE'),
+  ('strenum._name_mangler',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\strenum\\_name_mangler.py',
+   'PYMODULE'),
+  ('strenum._version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\strenum\\_version.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\string.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('supabase',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\__init__.py',
+   'PYMODULE'),
+  ('supabase._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\_async\\__init__.py',
+   'PYMODULE'),
+  ('supabase._async.auth_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\_async\\auth_client.py',
+   'PYMODULE'),
+  ('supabase._async.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\_async\\client.py',
+   'PYMODULE'),
+  ('supabase._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('supabase._sync.auth_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\_sync\\auth_client.py',
+   'PYMODULE'),
+  ('supabase._sync.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\_sync\\client.py',
+   'PYMODULE'),
+  ('supabase.lib',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\lib\\__init__.py',
+   'PYMODULE'),
+  ('supabase.lib.client_options',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\lib\\client_options.py',
+   'PYMODULE'),
+  ('supabase.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\types.py',
+   'PYMODULE'),
+  ('supabase.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase\\version.py',
+   'PYMODULE'),
+  ('supabase_auth',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\__init__.py',
+   'PYMODULE'),
+  ('supabase_auth._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\__init__.py',
+   'PYMODULE'),
+  ('supabase_auth._async.gotrue_admin_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\gotrue_admin_api.py',
+   'PYMODULE'),
+  ('supabase_auth._async.gotrue_admin_mfa_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\gotrue_admin_mfa_api.py',
+   'PYMODULE'),
+  ('supabase_auth._async.gotrue_base_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\gotrue_base_api.py',
+   'PYMODULE'),
+  ('supabase_auth._async.gotrue_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\gotrue_client.py',
+   'PYMODULE'),
+  ('supabase_auth._async.gotrue_mfa_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\gotrue_mfa_api.py',
+   'PYMODULE'),
+  ('supabase_auth._async.storage',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_async\\storage.py',
+   'PYMODULE'),
+  ('supabase_auth._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('supabase_auth._sync.gotrue_admin_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\gotrue_admin_api.py',
+   'PYMODULE'),
+  ('supabase_auth._sync.gotrue_admin_mfa_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\gotrue_admin_mfa_api.py',
+   'PYMODULE'),
+  ('supabase_auth._sync.gotrue_base_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\gotrue_base_api.py',
+   'PYMODULE'),
+  ('supabase_auth._sync.gotrue_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\gotrue_client.py',
+   'PYMODULE'),
+  ('supabase_auth._sync.gotrue_mfa_api',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\gotrue_mfa_api.py',
+   'PYMODULE'),
+  ('supabase_auth._sync.storage',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\_sync\\storage.py',
+   'PYMODULE'),
+  ('supabase_auth.constants',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\constants.py',
+   'PYMODULE'),
+  ('supabase_auth.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\errors.py',
+   'PYMODULE'),
+  ('supabase_auth.helpers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\helpers.py',
+   'PYMODULE'),
+  ('supabase_auth.http_clients',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\http_clients.py',
+   'PYMODULE'),
+  ('supabase_auth.timer',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\timer.py',
+   'PYMODULE'),
+  ('supabase_auth.types',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\types.py',
+   'PYMODULE'),
+  ('supabase_auth.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_auth\\version.py',
+   'PYMODULE'),
+  ('supabase_functions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\__init__.py',
+   'PYMODULE'),
+  ('supabase_functions._async',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\_async\\__init__.py',
+   'PYMODULE'),
+  ('supabase_functions._async.functions_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\_async\\functions_client.py',
+   'PYMODULE'),
+  ('supabase_functions._sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\_sync\\__init__.py',
+   'PYMODULE'),
+  ('supabase_functions._sync.functions_client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\_sync\\functions_client.py',
+   'PYMODULE'),
+  ('supabase_functions.errors',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\errors.py',
+   'PYMODULE'),
+  ('supabase_functions.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\utils.py',
+   'PYMODULE'),
+  ('supabase_functions.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\supabase_functions\\version.py',
+   'PYMODULE'),
+  ('supabase_init',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\supabase_init.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\sysconfig\\__init__.py',
+   'PYMODULE'),
+  ('system_pages', '-', 'PYMODULE'),
+  ('system_pages.account_modifications', '-', 'PYMODULE'),
+  ('system_pages.account_modifications.createAccounts',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\system_pages\\account_modifications\\createAccounts.py',
+   'PYMODULE'),
+  ('system_pages.account_modifications.editAccounts',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\system_pages\\account_modifications\\editAccounts.py',
+   'PYMODULE'),
+  ('system_pages.admin_account_management', '-', 'PYMODULE'),
+  ('system_pages.admin_account_management.adminConfigureAccount',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\system_pages\\admin_account_management\\adminConfigureAccount.py',
+   'PYMODULE'),
+  ('system_pages.admin_account_management.adminCreateAccount',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\system_pages\\admin_account_management\\adminCreateAccount.py',
+   'PYMODULE'),
+  ('system_pages.manageAdminAccounts',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\system_pages\\manageAdminAccounts.py',
+   'PYMODULE'),
+  ('system_pages.systemSettings',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\zar-clean\\system_pages\\systemSettings.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tarfile.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tempfile.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\textwrap.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\threading.py',
+   'PYMODULE'),
+  ('tkinter',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\__init__.py',
+   'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\commondialog.py',
+   'PYMODULE'),
+  ('tkinter.constants',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('tkinter.dialog',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\dialog.py',
+   'PYMODULE'),
+  ('tkinter.filedialog',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\filedialog.py',
+   'PYMODULE'),
+  ('tkinter.font',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\font.py',
+   'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.simpledialog',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\simpledialog.py',
+   'PYMODULE'),
+  ('tkinter.ttk',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tkinter\\ttk.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tokenize.py',
+   'PYMODULE'),
+  ('tomllib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tomllib\\__init__.py',
+   'PYMODULE'),
+  ('tomllib._parser',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tomllib\\_parser.py',
+   'PYMODULE'),
+  ('tomllib._re',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tomllib\\_re.py',
+   'PYMODULE'),
+  ('tomllib._types',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tomllib\\_types.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tty.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\typing.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('typing_inspection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\typing_inspection\\__init__.py',
+   'PYMODULE'),
+  ('typing_inspection.introspection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\typing_inspection\\introspection.py',
+   'PYMODULE'),
+  ('typing_inspection.typing_objects',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\typing_inspection\\typing_objects.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('unittest._log',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\_log.py',
+   'PYMODULE'),
+  ('unittest.async_case',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.mock',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\mock.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('utils', '-', 'PYMODULE'),
+  ('utils.dialogs',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\utils\\dialogs.py',
+   'PYMODULE'),
+  ('utils.ui_styles',
+   'C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\utils\\ui_styles.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\uuid.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\webbrowser.py',
+   'PYMODULE'),
+  ('websockets',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\__init__.py',
+   'PYMODULE'),
+  ('websockets.__main__',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\__main__.py',
+   'PYMODULE'),
+  ('websockets.asyncio',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('websockets.asyncio.async_timeout',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\async_timeout.py',
+   'PYMODULE'),
+  ('websockets.asyncio.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\client.py',
+   'PYMODULE'),
+  ('websockets.asyncio.compatibility',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\compatibility.py',
+   'PYMODULE'),
+  ('websockets.asyncio.connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\connection.py',
+   'PYMODULE'),
+  ('websockets.asyncio.messages',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\messages.py',
+   'PYMODULE'),
+  ('websockets.asyncio.router',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\router.py',
+   'PYMODULE'),
+  ('websockets.asyncio.server',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\asyncio\\server.py',
+   'PYMODULE'),
+  ('websockets.auth',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\auth.py',
+   'PYMODULE'),
+  ('websockets.cli',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\cli.py',
+   'PYMODULE'),
+  ('websockets.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\client.py',
+   'PYMODULE'),
+  ('websockets.connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\connection.py',
+   'PYMODULE'),
+  ('websockets.datastructures',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\datastructures.py',
+   'PYMODULE'),
+  ('websockets.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\exceptions.py',
+   'PYMODULE'),
+  ('websockets.extensions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\extensions\\__init__.py',
+   'PYMODULE'),
+  ('websockets.extensions.base',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\extensions\\base.py',
+   'PYMODULE'),
+  ('websockets.extensions.permessage_deflate',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\extensions\\permessage_deflate.py',
+   'PYMODULE'),
+  ('websockets.frames',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\frames.py',
+   'PYMODULE'),
+  ('websockets.headers',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\headers.py',
+   'PYMODULE'),
+  ('websockets.http',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\http.py',
+   'PYMODULE'),
+  ('websockets.http11',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\http11.py',
+   'PYMODULE'),
+  ('websockets.imports',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\imports.py',
+   'PYMODULE'),
+  ('websockets.legacy',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\__init__.py',
+   'PYMODULE'),
+  ('websockets.legacy.auth',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\auth.py',
+   'PYMODULE'),
+  ('websockets.legacy.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\client.py',
+   'PYMODULE'),
+  ('websockets.legacy.exceptions',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\exceptions.py',
+   'PYMODULE'),
+  ('websockets.legacy.framing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\framing.py',
+   'PYMODULE'),
+  ('websockets.legacy.handshake',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\handshake.py',
+   'PYMODULE'),
+  ('websockets.legacy.http',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\http.py',
+   'PYMODULE'),
+  ('websockets.legacy.protocol',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\protocol.py',
+   'PYMODULE'),
+  ('websockets.legacy.server',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\legacy\\server.py',
+   'PYMODULE'),
+  ('websockets.protocol',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\protocol.py',
+   'PYMODULE'),
+  ('websockets.server',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\server.py',
+   'PYMODULE'),
+  ('websockets.streams',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\streams.py',
+   'PYMODULE'),
+  ('websockets.sync',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\__init__.py',
+   'PYMODULE'),
+  ('websockets.sync.client',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\client.py',
+   'PYMODULE'),
+  ('websockets.sync.connection',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\connection.py',
+   'PYMODULE'),
+  ('websockets.sync.messages',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\messages.py',
+   'PYMODULE'),
+  ('websockets.sync.router',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\router.py',
+   'PYMODULE'),
+  ('websockets.sync.server',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\server.py',
+   'PYMODULE'),
+  ('websockets.sync.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\sync\\utils.py',
+   'PYMODULE'),
+  ('websockets.typing',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\typing.py',
+   'PYMODULE'),
+  ('websockets.uri',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\uri.py',
+   'PYMODULE'),
+  ('websockets.utils',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\utils.py',
+   'PYMODULE'),
+  ('websockets.version',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\websockets\\version.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('yarl',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\__init__.py',
+   'PYMODULE'),
+  ('yarl._parse',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_parse.py',
+   'PYMODULE'),
+  ('yarl._path',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_path.py',
+   'PYMODULE'),
+  ('yarl._query',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_query.py',
+   'PYMODULE'),
+  ('yarl._quoters',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_quoters.py',
+   'PYMODULE'),
+  ('yarl._quoting',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_quoting.py',
+   'PYMODULE'),
+  ('yarl._quoting_py',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_quoting_py.py',
+   'PYMODULE'),
+  ('yarl._url',
+   'c:\\Users\\DAVEN '
+   'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\yarl\\_url.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipfile\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipfile\\_path\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path.glob',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipfile\\_path\\glob.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipimport.py',
+   'PYMODULE'),
+  ('zoneinfo',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('zoneinfo._common',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zoneinfo\\_common.py',
+   'PYMODULE'),
+  ('zoneinfo._tzpath',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zoneinfo\\_tzpath.py',
+   'PYMODULE'),
+  ('zoneinfo._zoneinfo',
+   'C:\\Users\\DAVEN '
+   'JERTHRUDE\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zoneinfo\\_zoneinfo.py',
+   'PYMODULE')])
