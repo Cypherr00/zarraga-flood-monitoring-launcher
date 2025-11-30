@@ -21,8 +21,8 @@ class MainMenuPage(ctk.CTkFrame):
         self.digital_twin_process = None
 
         self.configure(
-            width=600,
-            height=400,
+            width=400,
+            height=800,
             corner_radius=20,
             fg_color=COLORS["background"]
         )

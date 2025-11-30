@@ -20,7 +20,7 @@ ctk.set_default_color_theme("blue")
 
 
 def resource_path(relative_path: str) -> str:
-    """ Get absolute path to resource, works for dev and PyInstaller """
+    """Get absolute path to resource, works for dev and PyInstaller."""
     if hasattr(sys, "_MEIPASS"):
         base_path = sys._MEIPASS
     else:
@@ -46,7 +46,7 @@ class MainFrame(ctk.CTk):
         self.resizable(False, False)
 
         # Load and darken background image
-        img_path = resource_path("assets/zarraga-dailyGuardian.jpg")
+        img_path = resource_path("assets/jalaur.png")
         original_img = Image.open(img_path).resize((window_width, window_height))
         dark_overlay = Image.new("RGBA", original_img.size, (0, 0, 0, 150))
         dark_img = Image.alpha_composite(original_img.convert("RGBA"), dark_overlay)
@@ -66,6 +66,10 @@ class MainFrame(ctk.CTk):
         self.container = ctk.CTkFrame(self, fg_color="transparent")
         self.container.place(relx=0.5, rely=0.5, anchor="center")
 
+        # Make container expandable (so pages fill it fully)
+        self.container.grid_rowconfigure(0, weight=1)
+        self.container.grid_columnconfigure(0, weight=1)
+
         # Page registration
         self.pages = {
             MainMenuPage: MainMenuPage(self.container, self, account_page_class=AccountManagerPage),
@@ -83,10 +87,12 @@ class MainFrame(ctk.CTk):
             LoginPage: LoginPage(self.container, self),
         }
 
+        # Initially hide all pages
         for page in self.pages.values():
-            page.grid(row=0, column=0, sticky="nsew")
+            page.grid(row=0, column=0, sticky="nsew")  # Grid them so they can expand
+            page.grid_remove()  # Hide immediately
 
-        # Show initial page after initialization
+        # Show initial page
         self.after(0, lambda: self.show_page(LoginPage))
 
         # Status bar
@@ -108,15 +114,23 @@ class MainFrame(ctk.CTk):
             return False
 
     def show_page(self, page_class):
+        """Show the requested page and hide all others."""
+        # Hide all pages first
+        for page in self.pages.values():
+            page.grid_remove()
+
+        # Move container depending on page
+        if page_class.__name__ == "LoginPage" or page_class.__name__ == "MainMenuPage":
+            # Move container to the LEFT
+            self.container.place(relx=0.0, rely=0.5, anchor="w",  x=20, y=0)
+        else:
+            # Center container for normal pages
+            self.container.place(relx=0.5, rely=0.5, anchor="center")
+
+        # Show requested page
         page = self.pages.get(page_class)
         if page:
+            page.grid()
             page.tkraise()
         else:
             print(f"Page {getattr(page_class, '__name__', str(page_class))} not found.")
-
-    def show_page_from_name(self, page_name: str):
-        for page_class in self.pages:
-            if page_class.__name__ == page_name:
-                self.show_page(page_class)
-                return
-        print(f"Page '{page_name}' not found in registry.")

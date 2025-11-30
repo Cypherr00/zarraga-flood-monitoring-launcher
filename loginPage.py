@@ -9,12 +9,23 @@ FONTS = get_fonts()
 class LoginPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
+
         self.controller = controller
-        self.supabase = controller.supabase  # shared supabase instance
-        self.configure(fg_color=COLORS["background"])
+        self.supabase = controller.supabase  # Shared Supabase instance
+
+        # Frame configuration
+        self.configure(fg_color=COLORS["background"], width=300, height=400, corner_radius=20)
+        self.pack_propagate(False)  # Prevent resizing to fit children
+
+        # Create UI
         self.create_ui()
 
+        # Bind Enter key: email -> password, password -> login
+        self.email_entry.bind("<Return>", lambda e: self.password_entry.focus())
+        self.password_entry.bind("<Return>", lambda e: self.login_user())
+
     def create_ui(self):
+        # Title
         ctk.CTkLabel(
             self,
             text="Zarraga Flood Monitoring System",
@@ -22,6 +33,7 @@ class LoginPage(ctk.CTkFrame):
             text_color=COLORS["text"]
         ).pack(pady=(50, 10))
 
+        # Subtitle
         ctk.CTkLabel(
             self,
             text="Login to Continue",
@@ -29,6 +41,7 @@ class LoginPage(ctk.CTkFrame):
             text_color=COLORS["subtext"]
         ).pack(pady=(0, 25))
 
+        # Email entry
         self.email_entry = ctk.CTkEntry(
             self,
             width=320,
@@ -39,6 +52,7 @@ class LoginPage(ctk.CTkFrame):
         )
         self.email_entry.pack(pady=10)
 
+        # Password entry
         self.password_entry = ctk.CTkEntry(
             self,
             width=320,
@@ -50,6 +64,7 @@ class LoginPage(ctk.CTkFrame):
         )
         self.password_entry.pack(pady=10)
 
+        # Login button
         styled_button(
             self,
             text="Login",
@@ -59,6 +74,7 @@ class LoginPage(ctk.CTkFrame):
             width=320
         ).pack(pady=20)
 
+        # Forgot password button
         ctk.CTkButton(
             self,
             text="Forgot Password?",
@@ -106,8 +122,9 @@ class LoginPage(ctk.CTkFrame):
 
             self.supabase.auth.reset_password_for_email(
                 email,
-                options={"redirect_to": redirect}                )
+                options={"redirect_to": redirect}
+            )
             show_info("Password Reset", "A password reset link has been sent to your email.")
-            
+
         except Exception as e:
             show_error("Error", str(e))
