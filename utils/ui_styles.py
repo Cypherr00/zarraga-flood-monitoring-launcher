@@ -1,44 +1,56 @@
 import customtkinter as ctk
 
-# === Colors ===
-PRIMARY_COLOR = "#0078ff"        # Accent blue
-BACKGROUND_COLOR = "#ffffff"     # Main light background
-SECONDARY_BG = "#f2f2f2"         # Light frame background
-TEXT_COLOR = "#0d0d0d"           # Almost black text
-SUBTEXT_COLOR = "#6f7b86"        # Soft grey
-DANGER_COLOR = "#d9534f"         # Light-theme friendly danger red
-BUTTON_HOVER_DANGER = "#c9302c"
+# ============================================================
+#   BASE COLORS — PROFESSIONAL LIGHT THEME WITH BLUE ACCENTS
+# ============================================================
 
-# Neutral buttons for light theme
-BUTTON_NORMAL = "#e0e0e0"        # Light grey button background
-BUTTON_HOVER = "#c8c8c8"         # Slightly darker hover
+PRIMARY_COLOR = "#0074e6"        # Slightly darker blue for professionalism
+BACKGROUND_COLOR = "#f9f9f9"     # Clean light-gray white background
+SECONDARY_BG = "#ffffff"         # White cards/panels (modern contrast)
+TEXT_COLOR = "#1e1e1e"           # Deep neutral black for readability
+SUBTEXT_COLOR = "#4a4a4a"        # Soft but readable grey for descriptions
+DANGER_COLOR = "#c0392b"         # Professional red tone
+BUTTON_HOVER_DANGER = "#a93226"  # Slightly darker hover red
 
-# === Fonts ===
+# Button variations suitable for a light environment
+BUTTON_NORMAL = "#e6e6e6"        # Soft neutral grey button
+BUTTON_HOVER = "#d0d0d0"         # Darker hover for visual feedback
+
+# Divider line for structure separation
+DIVIDER_COLOR = "#d5d5d5"        # Muted grey for modern separation lines
+
+# ============================================================
+#   FONTS — KEEPING THEM CONSISTENT AND READABLE
+# ============================================================
+
 def title_font(size=24):
-    """Return a bold CTkFont for titles."""
+    """Bold title font used for page headers."""
     try:
         return ctk.CTkFont(size=size, weight="bold")
     except RuntimeError:
         return None
 
 def label_font(size=16):
-    """Return a normal CTkFont for general labels."""
+    """Standard font for labels and body text."""
     try:
         return ctk.CTkFont(size=size)
     except RuntimeError:
         return None
 
 def small_font(size=12):
-    """Return a smaller CTkFont for status or sublabels."""
+    """Smaller font for hints, sublabels, or small UI elements."""
     try:
         return ctk.CTkFont(size=size)
     except RuntimeError:
         return None
 
-# === Buttons ===
+# ============================================================
+#   STANDARDIZED BUTTON
+# ============================================================
+
 def styled_button(master, text, command, color=BUTTON_NORMAL,
                   hover_color=BUTTON_HOVER, width=250):
-    """Return a consistently styled CTkButton."""
+    """Return a consistent light-theme compatible CTkButton."""
     return ctk.CTkButton(
         master,
         text=text,
@@ -47,10 +59,14 @@ def styled_button(master, text, command, color=BUTTON_NORMAL,
         hover_color=hover_color,
         font=label_font(16) or ("Arial", 14),
         text_color=TEXT_COLOR,
+        corner_radius=8,
         command=command
     )
 
-# === Color map ===
+# ============================================================
+#   COLOR MAP (DO NOT RENAME KEYS)
+# ============================================================
+
 COLORS = {
     "accent": PRIMARY_COLOR,
     "background": BACKGROUND_COLOR,
@@ -61,10 +77,13 @@ COLORS = {
     "danger_hover": BUTTON_HOVER_DANGER,
     "button": BUTTON_NORMAL,
     "button_hover": BUTTON_HOVER,
-    "divider": "#d0d0d0",         # light divider line
+    "divider": DIVIDER_COLOR,
 }
 
-# === Font map (lazy creation) ===
+# ============================================================
+#   FONT MAP
+# ============================================================
+
 def get_fonts():
     return {
         "title": title_font(24),
@@ -72,9 +91,12 @@ def get_fonts():
         "label_font": label_font(16),
     }
 
-# === Padding ===
+# ============================================================
+#   PADDING CONSTANTS — KEPT SIMPLE & UNIVERSAL
+# ============================================================
+
 PADDING = {
-    "title_y": (30, 5),
-    "subtitle_y": (0, 20),
-    "divider_y": (10, 20),
+    "title_y": (25, 5),
+    "subtitle_y": (0, 18),
+    "divider_y": (12, 18),
 }
