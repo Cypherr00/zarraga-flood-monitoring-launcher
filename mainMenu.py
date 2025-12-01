@@ -21,17 +21,44 @@ class MainMenuPage(ctk.CTkFrame):
         self.digital_twin_process = None
 
         self.configure(
-            width=400,
-            height=800,
+            width=300,
+            height=450,
             corner_radius=20,
             fg_color=COLORS["background"]
         )
+        self.pack_propagate(False)
 
-        # Get current user
-        user_data = self.controller.supabase.auth.get_user()
-        self.user = user_data.user if user_data and user_data.user else None
-        username = self.user.email if self.user else "Guest"
+        # Top-left icon buttons container
+        icon_frame = ctk.CTkFrame(self, fg_color="transparent")
+        icon_frame.place(x=15, y=15)
 
+        # System Settings ICON BUTTON (⚙)
+        ctk.CTkButton(
+            icon_frame,
+            text="⚙",
+            width=50,
+            height=50,
+            fg_color=COLORS["button"],
+            hover_color=COLORS["button_hover"],
+            corner_radius=15,
+            font=("Arial", 28),
+            command=self.open_settings
+        ).pack(pady=(0, 10))
+
+        # Manage Accounts ICON BUTTON (👤)
+        ctk.CTkButton(
+            icon_frame,
+            text="👤",
+            width=50,
+            height=50,
+            fg_color=COLORS["button"],
+            hover_color=COLORS["button_hover"],
+            corner_radius=15,
+            font=("Arial", 28),
+            command=lambda: go_to_page(self.controller, self.account_page_class)
+        ).pack(pady=(0, 10))
+
+        # Title
         ctk.CTkLabel(
             self,
             text="Zarraga Flood Monitoring System",
@@ -39,14 +66,7 @@ class MainMenuPage(ctk.CTkFrame):
             text_color=COLORS["text"]
         ).pack(pady=PADDING["title_y"])
 
-        ctk.CTkLabel(
-            self,
-            text=f"User: {username}",
-            font=FONTS["label_font"],
-            text_color=COLORS["accent"],
-            anchor="e"
-        ).place(relx=0.98, rely=0.05, anchor="ne")
-
+        # Current Water Level
         ctk.CTkLabel(
             self,
             text="Current Water Level: -- meters",
@@ -54,44 +74,34 @@ class MainMenuPage(ctk.CTkFrame):
             text_color=COLORS["accent"]
         ).pack(pady=PADDING["subtitle_y"])
 
+        # Divider
         ctk.CTkFrame(self, height=2, width=500, fg_color=COLORS["divider"]).pack(pady=PADDING["divider_y"])
 
-        button_width, button_spacing = 250, 15
-
+        # GIANT PLAY BUTTON
         ctk.CTkButton(
-            self, text="Open Digital Twin",
-            width=button_width,
+            self,
+            text="▶",
+            width=140,
+            height=140,
+            corner_radius=70,
             fg_color=COLORS["button"],
             hover_color=COLORS["button_hover"],
+            font=("Arial", 60),
             command=self.open_digital_twin
-        ).pack(pady=button_spacing)
+        ).pack(pady=25)
 
+        # Exit button
         ctk.CTkButton(
-            self, text="Manage Accounts",
-            width=button_width,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            command=lambda: go_to_page(self.controller, self.account_page_class)
-        ).pack(pady=button_spacing)
-
-        ctk.CTkButton(
-            self, text="System Settings",
-            width=button_width,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            command=self.open_settings
-        ).pack(pady=button_spacing)
-
-        ctk.CTkButton(
-            self, text="Exit",
-            width=button_width,
+            self,
+            text="Exit",
+            width=200,
             fg_color=COLORS["danger"],
             hover_color=COLORS["danger_hover"],
             command=self.on_close
-        ).pack(pady=button_spacing)
+        ).pack(pady=10)
 
+    # DIGITAL TWIN LOGIC (unchanged)
     def open_digital_twin(self):
-        # Resolve correct base path (works in raw Python and PyInstaller build)
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
 
@@ -103,7 +113,6 @@ class MainMenuPage(ctk.CTkFrame):
             show_error("Error", f"Digital Twin executable not found:\n{exe_path}")
             return
 
-        # Create auth token file
         appdata = os.getenv("APPDATA") or os.path.expanduser("~")
         auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
         os.makedirs(auth_dir, exist_ok=True)
@@ -117,7 +126,6 @@ class MainMenuPage(ctk.CTkFrame):
             show_error("Error", f"Unable to create auth token:\n{e}")
             return
 
-        # Launch Unity exe
         try:
             creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
             self.digital_twin_process = subprocess.Popen(
@@ -128,17 +136,15 @@ class MainMenuPage(ctk.CTkFrame):
             )
             show_info("Launching", "Digital Twin is starting...")
         except Exception as e:
-            # Cleanup token if launching fails
             for f in [auth_file, ready_file]:
                 if os.path.exists(f):
                     os.remove(f)
             show_error("Error", f"Failed to open Digital Twin:\n{e}")
             return
 
-        # Wait for Unity to signal readiness
         def wait_for_ready():
             try:
-                timeout = 10  # seconds
+                timeout = 10
                 interval = 0.1
                 elapsed = 0
                 while elapsed < timeout:
@@ -147,7 +153,6 @@ class MainMenuPage(ctk.CTkFrame):
                     time.sleep(interval)
                     elapsed += interval
             finally:
-                # Cleanup token and ready file
                 for f in [auth_file, ready_file]:
                     if os.path.exists(f):
                         try:

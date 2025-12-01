@@ -15,7 +15,7 @@ from loginPage import LoginPage
 import sys
 import os
 
-ctk.set_appearance_mode("dark")
+ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
 
@@ -122,7 +122,8 @@ class MainFrame(ctk.CTk):
         # Move container depending on page
         if page_class.__name__ == "LoginPage" or page_class.__name__ == "MainMenuPage":
             # Move container to the LEFT
-            self.container.place(relx=0.0, rely=0.5, anchor="w",  x=20, y=0)
+            self.container.place(relx=0.0, rely=0.5, anchor="w",  x=0, y=0)
+            
         else:
             # Center container for normal pages
             self.container.place(relx=0.5, rely=0.5, anchor="center")
