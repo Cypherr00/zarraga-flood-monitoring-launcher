@@ -5,10 +5,12 @@ import sys
 import os
 import threading
 import time
+from PIL import Image, ImageTk  # for logo
 
 from utils.dialogs import show_error, show_info
 from navigation import go_to_page
 from utils.ui_styles import COLORS, get_fonts, PADDING
+from loginPage import LoginPage      # needed for logout redirect
 from system_pages.systemSettings import SystemSettingsPage
 
 FONTS = get_fonts()
@@ -28,79 +30,100 @@ class MainMenuPage(ctk.CTkFrame):
         )
         self.pack_propagate(False)
 
-        # Top-left icon buttons container
-        icon_frame = ctk.CTkFrame(self, fg_color="transparent")
-        icon_frame.place(x=15, y=15)
+        # =============================
+        # TOP LOGO
+        # =============================
+        try:
+            logo_image = Image.open("assets/icon-logo.png")
+            logo_image = logo_image.resize((120, 120))
+            self.logo_photo = ImageTk.PhotoImage(logo_image)
+            ctk.CTkLabel(self, image=self.logo_photo, text="").pack(pady=(40, 20))
+        except Exception as e:
+            # fallback: show text if logo fails
+            ctk.CTkLabel(
+                self,
+                text="Zarraga Flood Monitoring System",
+                font=FONTS["title"],
+                text_color=COLORS["text"]
+            ).pack(pady=(40, 20))
 
-        # System Settings ICON BUTTON (⚙)
-        ctk.CTkButton(
-            icon_frame,
-            text="⚙",
-            width=50,
-            height=50,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            corner_radius=15,
-            font=("Arial", 28),
-            command=self.open_settings
-        ).pack(pady=(0, 10))
-
-        # Manage Accounts ICON BUTTON (👤)
-        ctk.CTkButton(
-            icon_frame,
-            text="👤",
-            width=50,
-            height=50,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            corner_radius=15,
-            font=("Arial", 28),
-            command=lambda: go_to_page(self.controller, self.account_page_class)
-        ).pack(pady=(0, 10))
-
-        # Title
-        ctk.CTkLabel(
-            self,
-            text="Zarraga Flood Monitoring System",
-            font=FONTS["title"],
-            text_color=COLORS["text"]
-        ).pack(pady=PADDING["title_y"])
-
-        # Current Water Level
-        ctk.CTkLabel(
-            self,
-            text="Current Water Level: -- meters",
-            font=FONTS["water_level"],
-            text_color=COLORS["accent"]
-        ).pack(pady=PADDING["subtitle_y"])
-
-        # Divider
-        ctk.CTkFrame(self, height=2, width=500, fg_color=COLORS["divider"]).pack(pady=PADDING["divider_y"])
-
-        # GIANT PLAY BUTTON
+        # =============================
+        # DIGITAL TWIN LABEL + BUTTON
+        # =============================
+        
         ctk.CTkButton(
             self,
             text="▶",
-            width=140,
-            height=140,
-            corner_radius=70,
+            width=100,
+            height=50,
+            corner_radius=15,  # less round
             fg_color=COLORS["button"],
             hover_color=COLORS["button_hover"],
-            font=("Arial", 60),
+            font=("Arial", 40),
             command=self.open_digital_twin
-        ).pack(pady=25)
+        ).pack(pady=(50, 0))
+        
+        ctk.CTkLabel(
+                    self,
+                    text="Digital Twin",
+                    font=("Arial", 25, "bold"),
+                    text_color="#043E71"
+                ).pack(pady=(0, 10))
+        # =============================
+        # BOTTOM-LEFT ICON BUTTONS
+        # =============================
+        bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
+        bottom_frame.place(x=15, y=450)  # adjust y if needed
 
-        # Exit button
+        button_frame = ctk.CTkFrame(
+            bottom_frame,
+            fg_color=COLORS["secondary"],
+            corner_radius=10
+        )
+        button_frame.pack()
+
+        btn_size = 40
+
+        # Account button (upper)
         ctk.CTkButton(
-            self,
-            text="Exit",
-            width=200,
-            fg_color=COLORS["danger"],
-            hover_color=COLORS["danger_hover"],
-            command=self.on_close
-        ).pack(pady=10)
+            button_frame,
+            text="👤",
+            width=btn_size,
+            height=btn_size,
+            fg_color=COLORS["button"],
+            hover_color=COLORS["button_hover"],
+            corner_radius=8,
+            font=("Arial", 22),
+            command=lambda: go_to_page(self.controller, self.account_page_class)
+        ).pack(pady=(8, 4), padx=10)
 
-    # DIGITAL TWIN LOGIC (unchanged)
+        # Logout button (bottom)
+        ctk.CTkButton(
+            button_frame,
+            text="🚪",
+            width=btn_size,
+            height=btn_size,
+            fg_color=COLORS["button"],
+            hover_color=COLORS["button_hover"],
+            corner_radius=8,
+            font=("Arial", 22),
+            command=self.logout
+        ).pack(pady=(4, 8), padx=10)
+
+    # ======================================================
+    # LOGOUT
+    # ======================================================
+    def logout(self):
+        try:
+            self.controller.supabase.auth.sign_out()
+        except Exception as e:
+            show_error("Logout Failed", str(e))
+            return
+        go_to_page(self.controller, LoginPage)
+
+    # ======================================================
+    # DIGITAL TWIN LOGIC
+    # ======================================================
     def open_digital_twin(self):
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
@@ -161,14 +184,3 @@ class MainMenuPage(ctk.CTkFrame):
                             pass
 
         threading.Thread(target=wait_for_ready, daemon=True).start()
-
-    def open_settings(self):
-        go_to_page(self.controller, SystemSettingsPage)
-
-    def on_close(self):
-        if self.digital_twin_process and self.digital_twin_process.poll() is None:
-            try:
-                self.digital_twin_process.terminate()
-            except:
-                pass
-        self.controller.quit()

@@ -1,17 +1,20 @@
 import customtkinter as ctk
 
 # === Colors ===
-PRIMARY_COLOR = "#0078ff"        # Accent blue
-BACKGROUND_COLOR = "#ffffff"     # Main light background
-SECONDARY_BG = "#f2f2f2"         # Light frame background
-TEXT_COLOR = "#0d0d0d"           # Almost black text
-SUBTEXT_COLOR = "#6f7b86"        # Soft grey
+PRIMARY_COLOR = "#0078ff"        # Accent blue (bright blue)
+BACKGROUND_COLOR = "#f2f6fc"     # Main light background
+SECONDARY_BG = "#e3edf8"         # Light frame / panel background
+TEXT_COLOR = "#1f4e79"           # Dark blue text
+SUBTEXT_COLOR = "#6f7b86"        # Soft grey subtext
 DANGER_COLOR = "#d9534f"         # Light-theme friendly danger red
 BUTTON_HOVER_DANGER = "#c9302c"
 
 # Neutral buttons for light theme
-BUTTON_NORMAL = "#e0e0e0"        # Light grey button background
-BUTTON_HOVER = "#c8c8c8"         # Slightly darker hover
+BUTTON_NORMAL = "#1f6fbf"        # Blue button background
+BUTTON_HOVER = "#155c99"         # Darker blue hover
+
+# Divider
+DIVIDER_COLOR = "#cce0ff"        # Light blue divider / borders
 
 # === Fonts ===
 def title_font(size=24):
@@ -61,7 +64,7 @@ COLORS = {
     "danger_hover": BUTTON_HOVER_DANGER,
     "button": BUTTON_NORMAL,
     "button_hover": BUTTON_HOVER,
-    "divider": "#d0d0d0",         # light divider line
+    "divider": DIVIDER_COLOR,
 }
 
 # === Font map (lazy creation) ===

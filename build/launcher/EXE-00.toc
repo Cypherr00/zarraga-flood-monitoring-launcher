@@ -92,7 +92,7 @@
  [],
  False,
  False,
- 1764124092,
+ 1764620256,
  [('runw.exe',
    'c:\\Users\\DAVEN '
    'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',

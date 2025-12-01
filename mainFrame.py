@@ -76,7 +76,7 @@ class MainFrame(ctk.CTk):
         # -------------------------------------------------
         # RIGHT-SIDE FIXED IMAGE PANEL  (NEW)
         # -------------------------------------------------
-        right_img_path = resource_path("assets/wide-logo.jfif")
+        right_img_path = resource_path("assets/wide-logo.png")
 
         self.right_side_image = ctk.CTkImage(
             light_image=Image.open(right_img_path),
@@ -94,7 +94,7 @@ class MainFrame(ctk.CTk):
         self.right_panel.place(
             relx=1.0, rely=0.5,
             anchor="e",
-            x=-50
+            x=-150
         )
 
         # -------------------------------------------------
@@ -179,7 +179,7 @@ class MainFrame(ctk.CTk):
             page.grid_remove()
 
         # Adjust container alignment
-        if page_class.__name__ in ("LoginPage", "MainMenuPage", "AccountManagerPage"):
+        if page_class.__name__ in ("LoginPage", "MainMenuPage", "AccountManagerPage", "CreateAccountsPage"):
             self.container.place(relx=0.0, rely=0.5, anchor="w")
         else:
             self.container.place(relx=0.5, rely=0.5, anchor="center")

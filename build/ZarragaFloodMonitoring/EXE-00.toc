@@ -3,7 +3,7 @@
  False,
  False,
  True,
- ['C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\app_icon.ico'],
+ ['C:\\Users\\DAVEN JERTHRUDE\\Desktop\\zar-clean\\app_icon2.ico'],
  None,
  False,
  False,
@@ -91,7 +91,7 @@
  [],
  False,
  False,
- 1764316695,
+ 1764621024,
  [('runw.exe',
    'c:\\Users\\DAVEN '
    'JERTHRUDE\\Desktop\\Zar\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',

@@ -7,8 +7,9 @@ class CreateAccountsPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
         self.controller = controller
-        self.configure(width=600, height=400, corner_radius=20, fg_color=COLORS["background"])
-
+        self.configure(width=300, height=550, corner_radius=20, fg_color=COLORS["background"])
+        self.pack_propagate(False)
+        
         # Title
         ctk.CTkLabel(
             self, text="Create Account",
@@ -73,4 +74,4 @@ class CreateAccountsPage(ctk.CTkFrame):
             else:
                 show_error("Failed", "Account could not be created.")
         except Exception as e:
-            show_error("Database Error", str(e))
+            show_error("Database Error", "Unable to connect to the internet")
