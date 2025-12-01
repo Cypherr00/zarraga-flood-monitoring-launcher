@@ -33,7 +33,7 @@ class CreateAccountsPage(ctk.CTkFrame):
         ctk.CTkButton(
             self, text="Back",
             fg_color="#34495e", hover_color="#2c3e50",
-            command=lambda: controller.show_page_from_name("AccountManagerPage")
+            command=lambda: controller.show_page("AccountManagerPage")
         ).pack(pady=5)
 
     def _apply_pin_validation(self):

@@ -22,8 +22,8 @@ class MainMenuPage(ctk.CTkFrame):
 
         self.configure(
             width=300,
-            height=450,
-            corner_radius=20,
+            height=550,
+            corner_radius=0,
             fg_color=COLORS["background"]
         )
         self.pack_propagate(False)

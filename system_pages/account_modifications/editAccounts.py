@@ -6,7 +6,8 @@ class EditAccountsPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
         self.controller = controller
-        self.configure(width=800, height=500, corner_radius=20, fg_color=COLORS["background"])
+        self.configure(width=800, height=500, corner_radius=0, fg_color=COLORS["background"])
+        self.pack_propagate(False)
 
         # Title
         ctk.CTkLabel(
@@ -71,7 +72,7 @@ class EditAccountsPage(ctk.CTkFrame):
         ctk.CTkButton(
             self, text="Back",
             fg_color="#34495e", hover_color="#2c3e50",
-            command=lambda: controller.show_page_from_name("AccountManagerPage")
+            command=lambda: self.controller.show_page("AccountManagerPage")
         ).pack(pady=(0, 10))
 
         self.accounts = []

@@ -19,8 +19,10 @@ ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
 
+# ---------------------------------------------------------
+# Resource Path Helper (unchanged)
+# ---------------------------------------------------------
 def resource_path(relative_path: str) -> str:
-    """Get absolute path to resource, works for dev and PyInstaller."""
     if hasattr(sys, "_MEIPASS"):
         base_path = sys._MEIPASS
     else:
@@ -28,16 +30,24 @@ def resource_path(relative_path: str) -> str:
     return os.path.join(base_path, relative_path)
 
 
+# ---------------------------------------------------------
+# MainFrame Class (Fully Recreated)
+# ---------------------------------------------------------
 class MainFrame(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        # Initialize Supabase client
+        # -------------------------------------------------
+        # Initialize Supabase
+        # -------------------------------------------------
         self.supabase = init_supabase()
 
+        # -------------------------------------------------
         # Window configuration
+        # -------------------------------------------------
         self.title("Zarraga Flood Monitoring Main Menu")
         window_width, window_height = 900, 550
+
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
         x = int((screen_width / 2) - (window_width / 2))
@@ -45,32 +55,60 @@ class MainFrame(ctk.CTk):
         self.geometry(f"{window_width}x{window_height}+{x}+{y}")
         self.resizable(False, False)
 
-        # Load and darken background image
+        # -------------------------------------------------
+        # Background Image (darkened)
+        # -------------------------------------------------
         img_path = resource_path("assets/jalaur.png")
         original_img = Image.open(img_path).resize((window_width, window_height))
+
         dark_overlay = Image.new("RGBA", original_img.size, (0, 0, 0, 150))
         dark_img = Image.alpha_composite(original_img.convert("RGBA"), dark_overlay)
 
-        # Use CTkImage for proper scaling and DPI support
         self.bg_image = ctk.CTkImage(
             light_image=dark_img,
             dark_image=dark_img,
             size=(window_width, window_height)
         )
 
-        # Background label
         bg_label = ctk.CTkLabel(self, image=self.bg_image, text="")
         bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
-        # Page container
+        # -------------------------------------------------
+        # RIGHT-SIDE FIXED IMAGE PANEL  (NEW)
+        # -------------------------------------------------
+        right_img_path = resource_path("assets/wide-logo.jfif")
+
+        self.right_side_image = ctk.CTkImage(
+            light_image=Image.open(right_img_path),
+            size=(300, 300)     # <--- adjustable
+        )
+
+        self.right_panel = ctk.CTkLabel(
+            self,
+            image=self.right_side_image,
+            text="",
+            fg_color="transparent"
+        )
+
+        # Always visible, fixed on the right
+        self.right_panel.place(
+            relx=1.0, rely=0.5,
+            anchor="e",
+            x=-50
+        )
+
+        # -------------------------------------------------
+        # CENTER/LEFT PAGE CONTAINER (for all pages)
+        # -------------------------------------------------
         self.container = ctk.CTkFrame(self, fg_color="transparent")
         self.container.place(relx=0.5, rely=0.5, anchor="center")
 
-        # Make container expandable (so pages fill it fully)
         self.container.grid_rowconfigure(0, weight=1)
         self.container.grid_columnconfigure(0, weight=1)
 
-        # Page registration
+        # -------------------------------------------------
+        # Page Registration
+        # -------------------------------------------------
         self.pages = {
             MainMenuPage: MainMenuPage(self.container, self, account_page_class=AccountManagerPage),
             AccountManagerPage: AccountManagerPage(self.container, self),
@@ -80,32 +118,37 @@ class MainFrame(ctk.CTk):
                 self.container,
                 self,
                 admin_create_account_page=AdminCreateAccountPage,
-                admin_configure_account_page=adminConfigureAccountsPage,
+                admin_configure_account_page=adminConfigureAccountsPage
             ),
             AdminCreateAccountPage: AdminCreateAccountPage(self.container, self),
             adminConfigureAccountsPage: adminConfigureAccountsPage(self.container, self),
             LoginPage: LoginPage(self.container, self),
         }
 
-        # Initially hide all pages
+        # Hide all pages initially
         for page in self.pages.values():
-            page.grid(row=0, column=0, sticky="nsew")  # Grid them so they can expand
-            page.grid_remove()  # Hide immediately
+            page.grid(row=0, column=0, sticky="nsew")
+            page.grid_remove()
 
-        # Show initial page
+        # Default page
         self.after(0, lambda: self.show_page(LoginPage))
 
-        # Status bar
-        self.status_bar = ctk.CTkLabel(
-            self,
-            text=f"Database: Connected" if self._test_connection() else "Database: Disconnected",
-            anchor="w",
-            font=ctk.CTkFont(size=12),
-            text_color="#7f8c8d",
-            fg_color="transparent",
-        )
-        self.status_bar.pack(side="bottom", fill="x", padx=10, pady=8)
 
+    # ---------------------------------------------------------
+    # Optional helper: Replace right-side image anytime
+    # ---------------------------------------------------------
+    def set_right_panel_image(self, relative_path: str, size=(260, 260)):
+        new_img = ctk.CTkImage(
+            light_image=Image.open(resource_path(relative_path)),
+            size=size
+        )
+        self.right_side_image = new_img
+        self.right_panel.configure(image=new_img)
+
+
+    # ---------------------------------------------------------
+    # Connection Test (unchanged)
+    # ---------------------------------------------------------
     def _test_connection(self) -> bool:
         try:
             self.supabase.table("user").select("user_name").limit(1).execute()
@@ -113,19 +156,32 @@ class MainFrame(ctk.CTk):
         except Exception:
             return False
 
-    def show_page(self, page_class):
-        """Show the requested page and hide all others."""
-        # Hide all pages first
+
+    # ---------------------------------------------------------
+    # show_page (your exact logic retained)
+    # ---------------------------------------------------------
+    def show_page(self, page_identifier):
+        # Resolve string to class if needed
+        if isinstance(page_identifier, str):
+            page_class = None
+            for cls in self.pages.keys():
+                if cls.__name__ == page_identifier:
+                    page_class = cls
+                    break
+            if not page_class:
+                print(f"Page '{page_identifier}' not found.")
+                return
+        else:
+            page_class = page_identifier
+
+        # Hide all
         for page in self.pages.values():
             page.grid_remove()
 
-        # Move container depending on page
-        if page_class.__name__ == "LoginPage" or page_class.__name__ == "MainMenuPage":
-            # Move container to the LEFT
-            self.container.place(relx=0.0, rely=0.5, anchor="w",  x=0, y=0)
-            
+        # Adjust container alignment
+        if page_class.__name__ in ("LoginPage", "MainMenuPage", "AccountManagerPage"):
+            self.container.place(relx=0.0, rely=0.5, anchor="w")
         else:
-            # Center container for normal pages
             self.container.place(relx=0.5, rely=0.5, anchor="center")
 
         # Show requested page
@@ -134,4 +190,4 @@ class MainFrame(ctk.CTk):
             page.grid()
             page.tkraise()
         else:
-            print(f"Page {getattr(page_class, '__name__', str(page_class))} not found.")
+            print(f"Page {page_class.__name__} not found.")

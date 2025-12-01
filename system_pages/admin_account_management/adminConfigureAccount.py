@@ -67,7 +67,7 @@ class adminConfigureAccountsPage(ctk.CTkFrame):
             text="Back",
             fg_color=COLORS["button"],
             hover_color=COLORS["button_hover"],
-            command=lambda: controller.show_page_from_name("AccountManagerPage"),
+            command=lambda: controller.show_page("SystemSettingsPage"),
             width=120,
         ).pack(side="left", padx=10)
 
