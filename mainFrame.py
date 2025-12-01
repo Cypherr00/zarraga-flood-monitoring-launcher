@@ -1,4 +1,4 @@
-# mainframe.py
+# minframe.py
 import customtkinter as ctk
 from supabase_init import init_supabase
 from PIL import Image

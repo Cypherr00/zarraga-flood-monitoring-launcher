@@ -5,15 +5,24 @@ import sys
 import os
 import threading
 import time
-from PIL import Image, ImageTk  # for logo
+from PIL import Image, ImageTk
 
 from utils.dialogs import show_error, show_info
 from navigation import go_to_page
 from utils.ui_styles import COLORS, get_fonts, PADDING
-from loginPage import LoginPage      # needed for logout redirect
+from loginPage import LoginPage
 from system_pages.systemSettings import SystemSettingsPage
 
 FONTS = get_fonts()
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 
 class MainMenuPage(ctk.CTkFrame):
     def __init__(self, parent, controller, account_page_class=None):
@@ -30,16 +39,21 @@ class MainMenuPage(ctk.CTkFrame):
         )
         self.pack_propagate(False)
 
-        # =============================
+        # =========================================
         # TOP LOGO
-        # =============================
+        # =========================================
+        logo_path = resource_path("assets/icon-logo.png")
+        print("[DEBUG] Logo path:", logo_path)
+
         try:
-            logo_image = Image.open("assets/icon-logo.png")
+            logo_image = Image.open(logo_path)
             logo_image = logo_image.resize((120, 120))
             self.logo_photo = ImageTk.PhotoImage(logo_image)
+
             ctk.CTkLabel(self, image=self.logo_photo, text="").pack(pady=(40, 20))
+
         except Exception as e:
-            # fallback: show text if logo fails
+            print("[DEBUG] Logo load error:", e)
             ctk.CTkLabel(
                 self,
                 text="Zarraga Flood Monitoring System",
@@ -47,33 +61,33 @@ class MainMenuPage(ctk.CTkFrame):
                 text_color=COLORS["text"]
             ).pack(pady=(40, 20))
 
-        # =============================
-        # DIGITAL TWIN LABEL + BUTTON
-        # =============================
-        
+        # =========================================
+        # DIGITAL TWIN BUTTON
+        # =========================================
         ctk.CTkButton(
             self,
             text="▶",
             width=100,
             height=50,
-            corner_radius=15,  # less round
+            corner_radius=15,
             fg_color=COLORS["button"],
             hover_color=COLORS["button_hover"],
             font=("Arial", 40),
             command=self.open_digital_twin
         ).pack(pady=(50, 0))
-        
+
         ctk.CTkLabel(
-                    self,
-                    text="Digital Twin",
-                    font=("Arial", 25, "bold"),
-                    text_color="#043E71"
-                ).pack(pady=(0, 10))
-        # =============================
-        # BOTTOM-LEFT ICON BUTTONS
-        # =============================
+            self,
+            text="Digital Twin",
+            font=("Arial", 25, "bold"),
+            text_color="#043E71"
+        ).pack(pady=(0, 10))
+
+        # =========================================
+        # BOTTOM ICON BUTTONS
+        # =========================================
         bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
-        bottom_frame.place(x=15, y=450)  # adjust y if needed
+        bottom_frame.place(x=15, y=450)
 
         button_frame = ctk.CTkFrame(
             bottom_frame,
@@ -84,7 +98,7 @@ class MainMenuPage(ctk.CTkFrame):
 
         btn_size = 40
 
-        # Account button (upper)
+        # Account button
         ctk.CTkButton(
             button_frame,
             text="👤",
@@ -97,7 +111,7 @@ class MainMenuPage(ctk.CTkFrame):
             command=lambda: go_to_page(self.controller, self.account_page_class)
         ).pack(pady=(8, 4), padx=10)
 
-        # Logout button (bottom)
+        # Logout button
         ctk.CTkButton(
             button_frame,
             text="🚪",
@@ -110,9 +124,9 @@ class MainMenuPage(ctk.CTkFrame):
             command=self.logout
         ).pack(pady=(4, 8), padx=10)
 
-    # ======================================================
+    # =========================================
     # LOGOUT
-    # ======================================================
+    # =========================================
     def logout(self):
         try:
             self.controller.supabase.auth.sign_out()
@@ -121,9 +135,9 @@ class MainMenuPage(ctk.CTkFrame):
             return
         go_to_page(self.controller, LoginPage)
 
-    # ======================================================
-    # DIGITAL TWIN LOGIC
-    # ======================================================
+    # =========================================
+    # DIGITAL TWIN
+    # =========================================
     def open_digital_twin(self):
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")

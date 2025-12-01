@@ -49,7 +49,7 @@ def styled_button(master, text, command, color=BUTTON_NORMAL,
         fg_color=color,
         hover_color=hover_color,
         font=label_font(16) or ("Arial", 14),
-        text_color=TEXT_COLOR,
+        text_color="black",
         command=command
     )
 

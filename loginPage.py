@@ -117,7 +117,7 @@ class LoginPage(ctk.CTkFrame):
             if email == "zarraga@offline.com" and password == "admin0":
                 go_to_main_menu(controller=self.controller)
             else:
-                show_error("Login Error", "Unable to connect to the internet")
+                show_error("Login Error", str(e))
 
     def forgot_password(self):
         email = self.email_entry.get().strip()
