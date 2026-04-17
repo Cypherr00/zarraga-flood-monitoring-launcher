@@ -7,6 +7,15 @@ from navigation import go_to_main_menu
 
 FONTS = get_fonts()
 
+def is_online():
+    """Returns True if there is an active internet connection, False otherwise."""
+    try:
+        socket.create_connection(("8.8.8.8", 53), timeout=3)
+        return True
+    except OSError:
+        pass
+    return False
+
 class LoginPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
@@ -14,7 +23,7 @@ class LoginPage(ctk.CTkFrame):
         self.controller = controller
         self.supabase = controller.supabase
 
-        # Modern compact card
+        # UPDATED: Reduced height from 550 to 460 to fix the "Empty Void" at the bottom
         self.configure(
             fg_color=COLORS["background"],
             width=300,
@@ -30,13 +39,13 @@ class LoginPage(ctk.CTkFrame):
         self.password_entry.bind("<Return>", lambda e: self.login_user())
 
     def create_ui(self):
-        # Title (shortened to fit modern card)
+        # Title 
         ctk.CTkLabel(
             self,
             text="Flood Monitoring",
             font=FONTS["title"],
             text_color=COLORS["text"]
-        ).pack(pady=(25, 4))
+        ).pack(pady=(30, 4))
 
         # Subtitle
         ctk.CTkLabel(
@@ -46,28 +55,60 @@ class LoginPage(ctk.CTkFrame):
             text_color=COLORS["subtext"]
         ).pack(pady=(0, 20))
 
+        # UPDATED: Added a dedicated label for Email above the entry field
+        ctk.CTkLabel(
+            self, 
+            text="Email", 
+            font=FONTS["label_font"], 
+            text_color=COLORS["text"]
+        ).pack(anchor="w", padx=20) # anchor="w" and padx=20 align it perfectly with the entry box
+        
         # Email entry
         self.email_entry = ctk.CTkEntry(
             self,
             width=260,
-            placeholder_text="Email",
+            placeholder_text="Enter your email", # Made placeholder more conversational
             font=FONTS["label_font"],
             fg_color=COLORS["secondary"],
             text_color=COLORS["text"]
         )
-        self.email_entry.pack(pady=8)
+        self.email_entry.pack(pady=(2, 12))
+
+        # UPDATED: Added a dedicated label for Password
+        ctk.CTkLabel(
+            self, 
+            text="Password", 
+            font=FONTS["label_font"], 
+            text_color=COLORS["text"]
+        ).pack(anchor="w", padx=20)
 
         # Password entry
         self.password_entry = ctk.CTkEntry(
             self,
             width=260,
-            placeholder_text="Password",
+            placeholder_text="Enter your password",
             show="•",
             font=FONTS["label_font"],
             fg_color=COLORS["secondary"],
             text_color=COLORS["text"]
         )
-        self.password_entry.pack(pady=8)
+        self.password_entry.pack(pady=(2, 6))
+
+        # UPDATED: "Show Password" Checkbox Toggle
+        self.show_pass_var = ctk.BooleanVar(value=False)
+        ctk.CTkCheckBox(
+            self,
+            text="Show password",
+            font=FONTS["label_font"],
+            text_color=COLORS["subtext"],
+            variable=self.show_pass_var,
+            command=self.toggle_password,
+            checkbox_width=16,
+            checkbox_height=16,
+            border_width=2,
+            fg_color=COLORS["accent"], 
+            hover_color=COLORS["button_hover"]
+        ).pack(anchor="w", padx=20, pady=(0, 15))
 
         # Login button
         styled_button(
@@ -77,9 +118,9 @@ class LoginPage(ctk.CTkFrame):
             color=COLORS["button"],
             hover_color=COLORS["button_hover"],
             width=260
-        ).pack(pady=(18, 12))
+        ).pack(pady=(10, 12))
 
-        # Forgot password link (compact modern style)
+        # Forgot password link 
         ctk.CTkButton(
             self,
             text="Forgot password?",
@@ -89,19 +130,14 @@ class LoginPage(ctk.CTkFrame):
             text_color=COLORS["accent"],
             hover_color=COLORS["button_hover"],
             command=self.forgot_password
-        ).pack(pady=0)
+        ).pack()
 
-    def is_online():
-        """Returns True if there is an active internet connection, False otherwise."""
-        try:
-            # Attempts to connect to Google's public DNS server
-            socket.create_connection(("8.8.8.8", 53), timeout=3)
-            return True
-        except OSError:
-            pass
-        return False
-
-# ... inside your class ...
+    # UPDATED: New method to handle the show/hide password logic
+    def toggle_password(self):
+        if self.show_pass_var.get():
+            self.password_entry.configure(show="")
+        else:
+            self.password_entry.configure(show="•")
 
     def login_user(self):
         email = self.email_entry.get().strip()
@@ -127,20 +163,14 @@ class LoginPage(ctk.CTkFrame):
                 show_error("Login Failed", "Invalid email or password.")
 
         except Exception as e:
-            # 1. Check if the user entered the offline credentials
             if email == "zarraga@offline.com" and password == "admin0":
-                
-                # 2. Verify that the device is actually offline
                 if not is_online():
-                    # You might want to assign a dummy user here so your app doesn't crash later
                     self.controller.current_user_email = email 
                     show_info("Offline Mode", "Logged in using offline mode.")
                     go_to_main_menu(controller=self.controller)
                 else:
-                    # If they are online, reject the offline credentials
                     show_error("Login Error", "This offline account can only be used when disconnected from the internet.")
             else:
-                # Handle all other login errors (e.g., wrong password for a real account)
                 show_error("Login Error", str(e))
 
     def forgot_password(self):

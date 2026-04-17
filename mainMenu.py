@@ -33,108 +33,143 @@ class MainMenuPage(ctk.CTkFrame):
 
         self.configure(
             width=300,
-            height=550,
+            height=560, # Adjusted to 560 to match your full vertical stretch
             corner_radius=0,
             fg_color=COLORS["background"]
         )
         self.pack_propagate(False)
 
+        # Structure the layout into three distinct vertical zones
+        self.top_frame = ctk.CTkFrame(self, fg_color="transparent")
+        self.top_frame.pack(side="top", fill="x", pady=(30, 10))
+
+        self.middle_frame = ctk.CTkFrame(self, fg_color="transparent")
+        self.middle_frame.pack(side="top", fill="both", expand=True) # expand=True centers the content
+
+        self.bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
+        self.bottom_frame.pack(side="bottom", fill="x", pady=(0, 30))
+
+        self.create_ui()
+
+    def create_ui(self):
         # =========================================
-        # TOP LOGO
+        # TOP: LOGO SECTION
         # =========================================
         logo_path = resource_path("assets/icon-logo.png")
-        print("[DEBUG] Logo path:", logo_path)
-
+        
         try:
             logo_image = Image.open(logo_path)
-            logo_image = logo_image.resize((120, 120))
+            logo_image = logo_image.resize((100, 100)) # Slightly smaller for a cleaner look
             self.logo_photo = ImageTk.PhotoImage(logo_image)
 
-            ctk.CTkLabel(self, image=self.logo_photo, text="").pack(pady=(40, 20))
-
+            ctk.CTkLabel(self.top_frame, image=self.logo_photo, text="").pack()
         except Exception as e:
             print("[DEBUG] Logo load error:", e)
             ctk.CTkLabel(
-                self,
-                text="Zarraga Flood Monitoring System",
+                self.top_frame,
+                text="FloodTwin",
                 font=FONTS["title"],
                 text_color=COLORS["text"]
-            ).pack(pady=(40, 20))
+            ).pack()
+
+        # Separator Line (adds a premium touch)
+        ctk.CTkFrame(
+            self.top_frame, 
+            height=2, 
+            fg_color=COLORS["secondary"]
+        ).pack(fill="x", padx=30, pady=(20, 0))
+
 
         # =========================================
-        # DIGITAL TWIN BUTTON
+        # MIDDLE: DIGITAL TWIN ACTION AREA
         # =========================================
-        ctk.CTkButton(
-            self,
-            text="▶",
-            width=100,
-            height=50,
-            corner_radius=15,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            font=("Arial", 40),
-            command=self.open_digital_twin
-        ).pack(pady=(50, 0))
+        # Wrapping it in a card to make it look like a dashboard widget
+        action_card = ctk.CTkFrame(
+            self.middle_frame, 
+            fg_color=COLORS["secondary"], 
+            corner_radius=16
+        )
+        action_card.place(relx=0.5, rely=0.5, anchor="center") # Perfectly centers the card
 
         ctk.CTkLabel(
-            self,
+            action_card,
             text="Digital Twin",
-            font=("Arial", 25, "bold"),
-            text_color="#043E71"
-        ).pack(pady=(0, 10))
+            font=("Arial", 20, "bold"),
+            text_color=COLORS["text"]
+        ).pack(pady=(20, 10))
 
-        # =========================================
-        # BOTTOM ICON BUTTONS
-        # =========================================
-        bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
-        bottom_frame.place(x=15, y=450)
-
-        button_frame = ctk.CTkFrame(
-            bottom_frame,
-            fg_color=COLORS["secondary"],
-            corner_radius=10
-        )
-        button_frame.pack()
-
-        btn_size = 40
-
-        # Account button
+        # The large play button
         ctk.CTkButton(
-            button_frame,
-            text="👤",
-            width=btn_size,
-            height=btn_size,
+            action_card,
+            text="▶",
+            width=80,
+            height=60,
+            corner_radius=12,
             fg_color=COLORS["button"],
             hover_color=COLORS["button_hover"],
+            font=("Arial", 30),
+            command=self.open_digital_twin
+        ).pack(pady=(0, 20), padx=40)
+
+
+        # =========================================
+        # BOTTOM: NAVIGATION BUTTONS
+        # =========================================
+        # Using a transparent/flat button style so they don't compete with the Play button
+        btn_width = 240
+        btn_height = 40
+        btn_font = ("Arial", 14, "bold")
+
+        ctk.CTkButton(
+            self.bottom_frame,
+            text="👤    My Account",
+            width=btn_width,
+            height=btn_height,
+            fg_color="transparent", # Transparent default
+            hover_color=COLORS["secondary"], # Highlights on hover
+            text_color=COLORS["text"],
             corner_radius=8,
-            font=("Arial", 22),
+            font=btn_font,
+            anchor="w",
             command=lambda: go_to_page(self.controller, self.account_page_class)
-        ).pack(pady=(8, 4), padx=10)
+        ).pack(pady=(0, 5))
 
-        # Logout button
         ctk.CTkButton(
-            button_frame,
-            text="🚪",
-            width=btn_size,
-            height=btn_size,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
+            self.bottom_frame,
+            text="⚙️    Settings", # Added a settings placeholder just to balance the menu
+            width=btn_width,
+            height=btn_height,
+            fg_color="transparent",
+            hover_color=COLORS["secondary"],
+            text_color=COLORS["text"],
             corner_radius=8,
-            font=("Arial", 22),
+            font=btn_font,
+            anchor="w",
+            command=lambda: go_to_page(self.controller, SystemSettingsPage)
+        ).pack(pady=(0, 5))
+
+        ctk.CTkButton(
+            self.bottom_frame,
+            text="🚪    Logout",
+            width=btn_width,
+            height=btn_height,
+            fg_color="transparent",
+            hover_color="#5c1a1a", # Subtle red hue on hover for destructive action
+            text_color=COLORS["accent"], # Use accent color (or a distinct color)
+            corner_radius=8,
+            font=btn_font,
+            anchor="w",
             command=self.logout
-        ).pack(pady=(4, 8), padx=10)
+        ).pack()
+
 
     # =========================================
-    # LOGOUT
-    # =========================================
-        # =========================================
-    # LOGOUT WITH CONFIRMATION
+    # LOGOUT LOGIC
     # =========================================
     def logout(self):
         import tkinter as tk
         from tkinter import messagebox
 
-        # create temporary hidden window for messagebox
         confirm_root = tk.Tk()
         confirm_root.withdraw()
 
@@ -146,7 +181,7 @@ class MainMenuPage(ctk.CTkFrame):
         confirm_root.destroy()
 
         if not confirm:
-            return  # user cancelled
+            return
 
         try:
             self.controller.supabase.auth.sign_out()
@@ -156,8 +191,9 @@ class MainMenuPage(ctk.CTkFrame):
 
         go_to_page(self.controller, LoginPage)
 
+
     # =========================================
-    # DIGITAL TWIN
+    # DIGITAL TWIN LOGIC
     # =========================================
     def open_digital_twin(self):
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
