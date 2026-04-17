@@ -127,12 +127,33 @@ class MainMenuPage(ctk.CTkFrame):
     # =========================================
     # LOGOUT
     # =========================================
+        # =========================================
+    # LOGOUT WITH CONFIRMATION
+    # =========================================
     def logout(self):
+        import tkinter as tk
+        from tkinter import messagebox
+
+        # create temporary hidden window for messagebox
+        confirm_root = tk.Tk()
+        confirm_root.withdraw()
+
+        confirm = messagebox.askyesno(
+            "Confirm Logout",
+            "Are you sure you want to log out?"
+        )
+
+        confirm_root.destroy()
+
+        if not confirm:
+            return  # user cancelled
+
         try:
             self.controller.supabase.auth.sign_out()
         except Exception as e:
             show_error("Logout Failed", str(e))
             return
+
         go_to_page(self.controller, LoginPage)
 
     # =========================================
