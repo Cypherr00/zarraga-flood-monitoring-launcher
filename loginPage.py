@@ -1,5 +1,6 @@
 # File: system_pages/loginPage.py
 import customtkinter as ctk
+import socket
 from utils.dialogs import show_info, show_error
 from utils.ui_styles import COLORS, get_fonts, styled_button
 from navigation import go_to_main_menu
@@ -90,6 +91,18 @@ class LoginPage(ctk.CTkFrame):
             command=self.forgot_password
         ).pack(pady=0)
 
+    def is_online():
+        """Returns True if there is an active internet connection, False otherwise."""
+        try:
+            # Attempts to connect to Google's public DNS server
+            socket.create_connection(("8.8.8.8", 53), timeout=3)
+            return True
+        except OSError:
+            pass
+        return False
+
+# ... inside your class ...
+
     def login_user(self):
         email = self.email_entry.get().strip()
         password = self.password_entry.get().strip()
@@ -114,9 +127,20 @@ class LoginPage(ctk.CTkFrame):
                 show_error("Login Failed", "Invalid email or password.")
 
         except Exception as e:
+            # 1. Check if the user entered the offline credentials
             if email == "zarraga@offline.com" and password == "admin0":
-                go_to_main_menu(controller=self.controller)
+                
+                # 2. Verify that the device is actually offline
+                if not is_online():
+                    # You might want to assign a dummy user here so your app doesn't crash later
+                    self.controller.current_user_email = email 
+                    show_info("Offline Mode", "Logged in using offline mode.")
+                    go_to_main_menu(controller=self.controller)
+                else:
+                    # If they are online, reject the offline credentials
+                    show_error("Login Error", "This offline account can only be used when disconnected from the internet.")
             else:
+                # Handle all other login errors (e.g., wrong password for a real account)
                 show_error("Login Error", str(e))
 
     def forgot_password(self):
