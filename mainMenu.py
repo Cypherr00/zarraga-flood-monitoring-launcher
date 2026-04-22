@@ -11,7 +11,6 @@ from utils.dialogs import show_error, show_info
 from navigation import go_to_page
 from utils.ui_styles import COLORS, get_fonts, PADDING
 from loginPage import LoginPage
-from system_pages.systemSettings import SystemSettingsPage
 
 FONTS = get_fonts()
 
@@ -33,7 +32,7 @@ class MainMenuPage(ctk.CTkFrame):
 
         self.configure(
             width=300,
-            height=560, # Adjusted to 560 to match your full vertical stretch
+            height=560,
             corner_radius=0,
             fg_color=COLORS["background"]
         )
@@ -44,7 +43,7 @@ class MainMenuPage(ctk.CTkFrame):
         self.top_frame.pack(side="top", fill="x", pady=(30, 10))
 
         self.middle_frame = ctk.CTkFrame(self, fg_color="transparent")
-        self.middle_frame.pack(side="top", fill="both", expand=True) # expand=True centers the content
+        self.middle_frame.pack(side="top", fill="both", expand=True)
 
         self.bottom_frame = ctk.CTkFrame(self, fg_color="transparent")
         self.bottom_frame.pack(side="bottom", fill="x", pady=(0, 30))
@@ -53,16 +52,16 @@ class MainMenuPage(ctk.CTkFrame):
 
     def create_ui(self):
         # =========================================
-        # TOP: LOGO SECTION
+        # TOP: LOGO & HOME LABEL
         # =========================================
         logo_path = resource_path("assets/icon-logo.png")
         
         try:
             logo_image = Image.open(logo_path)
-            logo_image = logo_image.resize((100, 100)) # Slightly smaller for a cleaner look
+            logo_image = logo_image.resize((100, 100))
             self.logo_photo = ImageTk.PhotoImage(logo_image)
 
-            ctk.CTkLabel(self.top_frame, image=self.logo_photo, text="").pack()
+            ctk.CTkLabel(self.top_frame, image=self.logo_photo, text="").pack(pady=(0, 5))
         except Exception as e:
             print("[DEBUG] Logo load error:", e)
             ctk.CTkLabel(
@@ -70,73 +69,85 @@ class MainMenuPage(ctk.CTkFrame):
                 text="FloodTwin",
                 font=FONTS["title"],
                 text_color=COLORS["text"]
-            ).pack()
+            ).pack(pady=(0, 5))
 
-        # Separator Line (adds a premium touch)
+        # Home Label indicator (using subtext color for a softer look)
+        ctk.CTkLabel(
+            self.top_frame,
+            text="H O M E",
+            font=("Arial", 11, "bold"),
+            text_color=COLORS["subtext"]
+        ).pack(pady=(0, 5))
+
+        # Separator Line (Now using your specific divider color)
         ctk.CTkFrame(
             self.top_frame, 
             height=2, 
-            fg_color=COLORS["secondary"]
-        ).pack(fill="x", padx=30, pady=(20, 0))
+            fg_color=COLORS["divider"]
+        ).pack(fill="x", padx=40, pady=(15, 0))
 
 
         # =========================================
-        # MIDDLE: DIGITAL TWIN ACTION AREA
+        # MIDDLE: DIGITAL TWIN ACTION CARD
         # =========================================
-        # Wrapping it in a card to make it look like a dashboard widget
-        action_card = ctk.CTkFrame(
+        # Adjusted rely to 0.45 for perfect vertical balance
+        self.action_card = ctk.CTkFrame(
             self.middle_frame, 
-            fg_color=COLORS["secondary"], 
-            corner_radius=16
+            fg_color=COLORS["button"], 
+            corner_radius=12, # Slightly sharper corners for a modern tech look
+            cursor="hand2"
         )
-        action_card.place(relx=0.5, rely=0.5, anchor="center") # Perfectly centers the card
+        self.action_card.place(relx=0.5, rely=0.45, anchor="center")
 
-        ctk.CTkLabel(
-            action_card,
-            text="Digital Twin",
-            font=("Arial", 20, "bold"),
-            text_color=COLORS["text"]
-        ).pack(pady=(20, 10))
+        def trigger_action(event):
+            self.open_digital_twin()
 
-        # The large play button
-        ctk.CTkButton(
-            action_card,
+        # Left side: Play Icon (White for high contrast against blue)
+        icon_label = ctk.CTkLabel(
+            self.action_card,
             text="▶",
-            width=80,
-            height=60,
-            corner_radius=12,
-            fg_color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            font=("Arial", 30),
-            command=self.open_digital_twin
-        ).pack(pady=(0, 20), padx=40)
+            font=("Arial", 36),
+            text_color="white" 
+        )
+        icon_label.grid(row=0, column=0, rowspan=2, padx=(25, 15), pady=20)
+
+        # Right side: Title text (White for readability)
+        title_label = ctk.CTkLabel(
+            self.action_card,
+            text="Digital Twin",
+            font=("Arial", 18, "bold"),
+            text_color="white"
+        )
+        title_label.grid(row=0, column=1, sticky="sw", padx=(0, 30), pady=(20, 0))
+
+        # Right side: Subtitle text (Using divider color as a soft light-blue accent)
+        subtitle_label = ctk.CTkLabel(
+            self.action_card,
+            text="Launch Unity",
+            font=("Arial", 12),
+            text_color=COLORS["divider"] 
+        )
+        subtitle_label.grid(row=1, column=1, sticky="nw", padx=(0, 30), pady=(0, 20))
+
+        # Bind hover effects
+        card_widgets = [self.action_card, icon_label, title_label, subtitle_label]
+        for widget in card_widgets:
+            widget.bind("<Button-1>", trigger_action)
+            widget.bind("<Enter>", lambda e: self.action_card.configure(fg_color=COLORS["button_hover"]))
+            widget.bind("<Leave>", lambda e: self.action_card.configure(fg_color=COLORS["button"]))
 
 
         # =========================================
         # BOTTOM: NAVIGATION BUTTONS
         # =========================================
-        # Using a transparent/flat button style so they don't compete with the Play button
         btn_width = 240
-        btn_height = 40
+        btn_height = 42
         btn_font = ("Arial", 14, "bold")
 
+        # Users Button
         ctk.CTkButton(
             self.bottom_frame,
-            text="👤    My Account",
-            width=btn_width,
-            height=btn_height,
-            fg_color="transparent", # Transparent default
-            hover_color=COLORS["secondary"], # Highlights on hover
-            text_color=COLORS["text"],
-            corner_radius=8,
-            font=btn_font,
-            anchor="w",
-            command=lambda: go_to_page(self.controller, self.account_page_class)
-        ).pack(pady=(0, 5))
-
-        ctk.CTkButton(
-            self.bottom_frame,
-            text="⚙️    Settings", # Added a settings placeholder just to balance the menu
+            text="👤    Users",
             width=btn_width,
             height=btn_height,
             fg_color="transparent",
@@ -145,17 +156,18 @@ class MainMenuPage(ctk.CTkFrame):
             corner_radius=8,
             font=btn_font,
             anchor="w",
-            command=lambda: go_to_page(self.controller, SystemSettingsPage)
-        ).pack(pady=(0, 5))
+            command=lambda: go_to_page(self.controller, self.account_page_class)
+        ).pack(pady=(0, 8))
 
+        # Logout Button (Now uses your DANGER_COLOR for clear UI semantics)
         ctk.CTkButton(
             self.bottom_frame,
             text="🚪    Logout",
             width=btn_width,
             height=btn_height,
             fg_color="transparent",
-            hover_color="#5c1a1a", # Subtle red hue on hover for destructive action
-            text_color=COLORS["accent"], # Use accent color (or a distinct color)
+            hover_color=COLORS["secondary"], # Soft hover to match light theme
+            text_color=COLORS["danger"], # Red text for destructive action
             corner_radius=8,
             font=btn_font,
             anchor="w",
@@ -196,6 +208,8 @@ class MainMenuPage(ctk.CTkFrame):
     # DIGITAL TWIN LOGIC
     # =========================================
     def open_digital_twin(self):
+        import time
+        import tkinter as tk # Required for the self-closing logic
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
 
@@ -216,6 +230,11 @@ class MainMenuPage(ctk.CTkFrame):
         try:
             with open(auth_file, "w", encoding="utf-8") as f:
                 f.write("AUTHORIZED")
+                f.flush()
+                os.fsync(f.fileno())
+            
+            time.sleep(0.5)
+
         except Exception as e:
             show_error("Error", f"Unable to create auth token:\n{e}")
             return
@@ -228,14 +247,14 @@ class MainMenuPage(ctk.CTkFrame):
                 creationflags=creationflags,
                 cwd=os.path.dirname(exe_path)
             )
-            show_info("Launching", "Digital Twin is starting...")
+
+
         except Exception as e:
             for f in [auth_file, ready_file]:
                 if os.path.exists(f):
                     os.remove(f)
             show_error("Error", f"Failed to open Digital Twin:\n{e}")
             return
-
         def wait_for_ready():
             try:
                 timeout = 10

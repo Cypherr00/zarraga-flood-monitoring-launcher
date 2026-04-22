@@ -139,6 +139,16 @@ class LoginPage(ctk.CTkFrame):
         else:
             self.password_entry.configure(show="•")
 
+    # Add this new method right above login_user
+    def clear_credentials(self):
+        """Clears the email and password fields for security upon successful login."""
+        self.email_entry.delete(0, "end")
+        self.password_entry.delete(0, "end")
+        
+        # Reset the "Show password" checkbox to hidden
+        self.show_pass_var.set(False)
+        self.password_entry.configure(show="•")
+
     def login_user(self):
         email = self.email_entry.get().strip()
         password = self.password_entry.get().strip()
@@ -158,6 +168,10 @@ class LoginPage(ctk.CTkFrame):
                 self.controller.current_user = user
                 self.controller.current_user_email = user.email
                 show_info("Login Successful", "Welcome to FloodTwin!")
+                
+                # WIPE CREDENTIALS BEFORE LEAVING THE PAGE
+                self.clear_credentials()
+                
                 go_to_main_menu(controller=self.controller)
             else:
                 show_error("Login Failed", "Invalid email or password.")
@@ -167,12 +181,16 @@ class LoginPage(ctk.CTkFrame):
                 if not is_online():
                     self.controller.current_user_email = email 
                     show_info("Offline Mode", "Logged in using offline mode.")
+                    
+                    # WIPE CREDENTIALS BEFORE LEAVING THE PAGE
+                    self.clear_credentials()
+                    
                     go_to_main_menu(controller=self.controller)
                 else:
                     show_error("Login Error", "This offline account can only be used when disconnected from the internet.")
             else:
                 show_error("Login Error", str(e))
-
+                
     def forgot_password(self):
         email = self.email_entry.get().strip()
         if not email:
