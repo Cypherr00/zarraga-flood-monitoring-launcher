@@ -1,4 +1,4 @@
-# minframe.py
+# mainframe.py
 import customtkinter as ctk
 from supabase_init import init_supabase
 from PIL import Image
@@ -20,7 +20,7 @@ ctk.set_default_color_theme("blue")
 
 
 # ---------------------------------------------------------
-# Resource Path Helper (unchanged)
+# Resource Path Helper
 # ---------------------------------------------------------
 def resource_path(relative_path: str) -> str:
     if hasattr(sys, "_MEIPASS"):
@@ -31,7 +31,7 @@ def resource_path(relative_path: str) -> str:
 
 
 # ---------------------------------------------------------
-# MainFrame Class (Fully Recreated)
+# MainFrame Class
 # ---------------------------------------------------------
 class MainFrame(ctk.CTk):
     def __init__(self):
@@ -74,7 +74,7 @@ class MainFrame(ctk.CTk):
         bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
         # -------------------------------------------------
-        # RIGHT-SIDE FIXED IMAGE PANEL  (NEW)
+        # RIGHT-SIDE FIXED IMAGE PANEL
         # -------------------------------------------------
         right_img_path = resource_path("assets/wide-logo.png")
 
@@ -96,6 +96,18 @@ class MainFrame(ctk.CTk):
             anchor="e",
             x=-150
         )
+
+        # -------------------------------------------------
+        # VERSION NUMBER (BOTTOM RIGHT)
+        # -------------------------------------------------
+        self.version_label = ctk.CTkLabel(
+            self, 
+            text="v1.0.3", 
+            font=("Arial", 11, "bold"),
+            text_color="black",
+            fg_color="transparent"
+        )
+        self.version_label.place(relx=1.0, rely=1.0, anchor="se", x=-10, y=-10)
 
         # -------------------------------------------------
         # CENTER/LEFT PAGE CONTAINER (for all pages)
@@ -147,7 +159,7 @@ class MainFrame(ctk.CTk):
 
 
     # ---------------------------------------------------------
-    # Connection Test (unchanged)
+    # Connection Test
     # ---------------------------------------------------------
     def _test_connection(self) -> bool:
         try:
@@ -158,7 +170,7 @@ class MainFrame(ctk.CTk):
 
 
     # ---------------------------------------------------------
-    # show_page (your exact logic retained)
+    # show_page
     # ---------------------------------------------------------
     def show_page(self, page_identifier):
         # Resolve string to class if needed
@@ -191,3 +203,7 @@ class MainFrame(ctk.CTk):
             page.tkraise()
         else:
             print(f"Page {page_class.__name__} not found.")
+
+if __name__ == "__main__":
+    app = MainFrame()
+    app.mainloop()
