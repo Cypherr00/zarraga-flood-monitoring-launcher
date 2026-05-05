@@ -34,9 +34,24 @@ class LoginPage(ctk.CTkFrame):
 
         self.create_ui()
 
-        # Enter key behavior
-        self.email_entry.bind("<Return>", lambda e: self.password_entry.focus())
-        self.password_entry.bind("<Return>", lambda e: self.login_user())
+        # Bind Enter key globally when the page is active
+        self.bind("<Map>", self._on_map)
+        self.bind("<Unmap>", self._on_unmap)
+
+    def _on_map(self, event):
+        """When the page is shown, bind the Enter key to the main window."""
+        self.winfo_toplevel().bind("<Return>", self._handle_return)
+
+    def _on_unmap(self, event):
+        """When leaving the page, remove the binding so it doesn't affect other pages."""
+        self.winfo_toplevel().unbind("<Return>")
+
+    def _handle_return(self, event):
+        """If focus is on the email entry, move to password. Otherwise, try to log in."""
+        if self.focus_get() == self.email_entry:
+            self.password_entry.focus()
+        else:
+            self.login_user()
 
     def create_ui(self):
         # Title 
@@ -61,13 +76,13 @@ class LoginPage(ctk.CTkFrame):
             text="Email", 
             font=FONTS["label_font"], 
             text_color=COLORS["text"]
-        ).pack(anchor="w", padx=20) # anchor="w" and padx=20 align it perfectly with the entry box
+        ).pack(anchor="w", padx=20) 
         
         # Email entry
         self.email_entry = ctk.CTkEntry(
             self,
             width=260,
-            placeholder_text="Enter your email", # Made placeholder more conversational
+            placeholder_text="Enter your email", 
             font=FONTS["label_font"],
             fg_color=COLORS["secondary"],
             text_color=COLORS["text"]
