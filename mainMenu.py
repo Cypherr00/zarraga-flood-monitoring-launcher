@@ -209,7 +209,7 @@ class MainMenuPage(ctk.CTkFrame):
     # =========================================
     def open_digital_twin(self):
         import time
-        import tkinter as tk # Required for the self-closing logic
+        import tkinter as tk
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
 
@@ -223,22 +223,46 @@ class MainMenuPage(ctk.CTkFrame):
 
         appdata = os.getenv("APPDATA") or os.path.expanduser("~")
         auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
-        os.makedirs(auth_dir, exist_ok=True)
+        
+        # Ensure the directory exists
+        if not os.path.exists(auth_dir):
+            os.makedirs(auth_dir, exist_ok=True)
+            # Give the OS a moment to register the new folder on a fresh install
+            time.sleep(0.3)
+
         auth_file = os.path.join(auth_dir, "session_auth.txt")
         ready_file = os.path.join(auth_dir, "ready.txt")
 
         try:
+            # AGGRESSIVE WRITE: We will try to write and verify the file exists
+            # before moving an inch further.
             with open(auth_file, "w", encoding="utf-8") as f:
                 f.write("AUTHORIZED")
                 f.flush()
                 os.fsync(f.fileno())
-            
-            time.sleep(0.5)
+
+            # THE GATEKEEPER LOOP:
+            # We check for the file every 200ms for up to 3 seconds.
+            # This is crucial for first-time installs where the OS is slow.
+            success = False
+            for attempt in range(15): 
+                if os.path.exists(auth_file):
+                    # Check if the file actually has the content
+                    with open(auth_file, "r") as f:
+                        if f.read().strip() == "AUTHORIZED":
+                            success = True
+                            break
+                time.sleep(0.2)
+
+            if not success:
+                show_error("Initialization Error", "The system is still setting up the simulation environment. Please try launching it one more time.")
+                return
 
         except Exception as e:
             show_error("Error", f"Unable to create auth token:\n{e}")
             return
 
+        # LAUNCH PHASE
         try:
             creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
             self.digital_twin_process = subprocess.Popen(
@@ -248,11 +272,23 @@ class MainMenuPage(ctk.CTkFrame):
                 cwd=os.path.dirname(exe_path)
             )
 
+            # Center-aligned, auto-closing notification
+            notification = tk.Toplevel()
+            notification.title("Launching")
+            label_font = ("Helvetica", 14, "bold") 
+            label = tk.Label(notification, text="Digital Twin is starting...", font=label_font, pady=30, padx=30)
+            label.pack()
+
+            notification.update_idletasks()
+            width = notification.winfo_width()
+            height = notification.winfo_height()
+            x = (notification.winfo_screenwidth() // 2) - (width // 2)
+            y = (notification.winfo_screenheight() // 2) - (height // 2)
+            notification.geometry(f'{width}x{height}+{x}+{y}')
+
+            notification.after(2000, notification.destroy) 
 
         except Exception as e:
-            for f in [auth_file, ready_file]:
-                if os.path.exists(f):
-                    os.remove(f)
             show_error("Error", f"Failed to open Digital Twin:\n{e}")
             return
         def wait_for_ready():
