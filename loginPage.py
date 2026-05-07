@@ -1,6 +1,9 @@
 # File: system_pages/loginPage.py
 import customtkinter as ctk
 import socket
+import os
+import time
+import threading
 from utils.dialogs import show_info, show_error
 from utils.ui_styles import COLORS, get_fonts, styled_button
 from navigation import go_to_main_menu
@@ -23,7 +26,7 @@ class LoginPage(ctk.CTkFrame):
         self.controller = controller
         self.supabase = controller.supabase
 
-        # UPDATED: Reduced height from 550 to 460 to fix the "Empty Void" at the bottom
+        # UI Configuration
         self.configure(
             fg_color=COLORS["background"],
             width=300,
@@ -70,7 +73,7 @@ class LoginPage(ctk.CTkFrame):
             text_color=COLORS["subtext"]
         ).pack(pady=(0, 20))
 
-        # UPDATED: Added a dedicated label for Email above the entry field
+        # Email Label
         ctk.CTkLabel(
             self, 
             text="Email", 
@@ -89,7 +92,7 @@ class LoginPage(ctk.CTkFrame):
         )
         self.email_entry.pack(pady=(2, 12))
 
-        # UPDATED: Added a dedicated label for Password
+        # Password Label
         ctk.CTkLabel(
             self, 
             text="Password", 
@@ -109,7 +112,7 @@ class LoginPage(ctk.CTkFrame):
         )
         self.password_entry.pack(pady=(2, 6))
 
-        # UPDATED: "Show Password" Checkbox Toggle
+        # Show Password Checkbox
         self.show_pass_var = ctk.BooleanVar(value=False)
         ctk.CTkCheckBox(
             self,
@@ -147,22 +150,56 @@ class LoginPage(ctk.CTkFrame):
             command=self.forgot_password
         ).pack()
 
-    # UPDATED: New method to handle the show/hide password logic
     def toggle_password(self):
         if self.show_pass_var.get():
             self.password_entry.configure(show="")
         else:
             self.password_entry.configure(show="•")
 
-    # Add this new method right above login_user
     def clear_credentials(self):
         """Clears the email and password fields for security upon successful login."""
         self.email_entry.delete(0, "end")
         self.password_entry.delete(0, "end")
-        
-        # Reset the "Show password" checkbox to hidden
         self.show_pass_var.set(False)
         self.password_entry.configure(show="•")
+
+    def pre_warm_digital_twin(self):
+        """
+        Background task to 'pre-heat' the file system.
+        This forces Windows Defender to scan the folder and the OS to cache 
+        the handshake path before the user actually tries to launch the simulation.
+        """
+        def run_warmup():
+            appdata = os.getenv("APPDATA") or os.path.expanduser("~")
+            auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
+            
+            try:
+                # Ensure directory exists
+                if not os.path.exists(auth_dir):
+                    os.makedirs(auth_dir, exist_ok=True)
+                    time.sleep(0.2)
+
+                auth_file = os.path.join(auth_dir, "session_auth.txt")
+                
+                # Write a dummy handshake to trigger OS indexing/Antivirus scan
+                with open(auth_file, "w", encoding="utf-8") as f:
+                    f.write("WARMING_UP")
+                    f.flush()
+                    os.fsync(f.fileno())
+                
+                # Brief pause, then read it back to verify access
+                time.sleep(0.3)
+                if os.path.exists(auth_file):
+                    with open(auth_file, "r") as f:
+                        _ = f.read()
+                
+                # Cleanup: Leave the environment 'warm' but clean
+                os.remove(auth_file)
+            except Exception:
+                pass 
+
+        # Execute in background to keep UI responsive
+        threading.Thread(target=run_warmup, daemon=True).start()
 
     def login_user(self):
         email = self.email_entry.get().strip()
@@ -182,24 +219,24 @@ class LoginPage(ctk.CTkFrame):
             if user:
                 self.controller.current_user = user
                 self.controller.current_user_email = user.email
+                
+                # Warm up the file system for the Digital Twin
+                self.pre_warm_digital_twin()
+                
                 show_info("Login Successful", "Welcome to FloodTwin!")
-                
-                # WIPE CREDENTIALS BEFORE LEAVING THE PAGE
                 self.clear_credentials()
-                
                 go_to_main_menu(controller=self.controller)
             else:
                 show_error("Login Failed", "Invalid email or password.")
 
         except Exception as e:
+            # Handle Offline Mode Check
             if email == "zarraga@offline.com" and password == "admin0":
                 if not is_online():
                     self.controller.current_user_email = email 
+                    self.pre_warm_digital_twin()
                     show_info("Offline Mode", "Logged in using offline mode.")
-                    
-                    # WIPE CREDENTIALS BEFORE LEAVING THE PAGE
                     self.clear_credentials()
-                    
                     go_to_main_menu(controller=self.controller)
                 else:
                     show_error("Login Error", "This offline account can only be used when disconnected from the internet.")
@@ -219,6 +256,5 @@ class LoginPage(ctk.CTkFrame):
                 options={"redirect_to": redirect}
             )
             show_info("Password Reset", "A reset link has been sent to your email.")
-
         except Exception as e:
             show_error("Error", str(e))
