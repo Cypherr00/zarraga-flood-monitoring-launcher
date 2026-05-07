@@ -206,10 +206,11 @@ class MainMenuPage(ctk.CTkFrame):
 
     # =========================================
     # DIGITAL TWIN LOGIC
-    # =========================================
-    def open_digital_twin(self):
+    # =========================================def open_digital_twin(self):
         import time
-        import tkinter as tk
+        import threading
+        import tkinter as tk # Still needed for some screen metrics
+
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
 
@@ -221,92 +222,78 @@ class MainMenuPage(ctk.CTkFrame):
             show_error("Error", f"Digital Twin executable not found:\n{exe_path}")
             return
 
+        # Prepare Shared Mailbox Paths
         appdata = os.getenv("APPDATA") or os.path.expanduser("~")
         auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
-        
-        # Ensure the directory exists
-        if not os.path.exists(auth_dir):
-            os.makedirs(auth_dir, exist_ok=True)
-            # Give the OS a moment to register the new folder on a fresh install
-            time.sleep(0.3)
-
         auth_file = os.path.join(auth_dir, "session_auth.txt")
         ready_file = os.path.join(auth_dir, "ready.txt")
 
+        # 1. THE HANDSHAKE (Writing the Key)
         try:
-            # AGGRESSIVE WRITE: We will try to write and verify the file exists
-            # before moving an inch further.
+            os.makedirs(auth_dir, exist_ok=True)
             with open(auth_file, "w", encoding="utf-8") as f:
                 f.write("AUTHORIZED")
                 f.flush()
                 os.fsync(f.fileno())
-
-            # THE GATEKEEPER LOOP:
-            # We check for the file every 200ms for up to 3 seconds.
-            # This is crucial for first-time installs where the OS is slow.
-            success = False
-            for attempt in range(15): 
-                if os.path.exists(auth_file):
-                    # Check if the file actually has the content
-                    with open(auth_file, "r") as f:
-                        if f.read().strip() == "AUTHORIZED":
-                            success = True
-                            break
-                time.sleep(0.2)
-
-            if not success:
-                show_error("Initialization Error", "The system is still setting up the simulation environment. Please try launching it one more time.")
-                return
-
         except Exception as e:
-            show_error("Error", f"Unable to create auth token:\n{e}")
+            show_error("Error", f"Handshake failed: {e}")
             return
 
-        # LAUNCH PHASE
-        try:
-            creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
-            self.digital_twin_process = subprocess.Popen(
-                [exe_path],
-                shell=False,
-                creationflags=creationflags,
-                cwd=os.path.dirname(exe_path)
-            )
+        # 2. CREATE MODERN UI ALERT
+        # We use CTkToplevel so it matches your theme (Dark/Light)
+        loading_win = ctk.CTkToplevel(self)
+        loading_win.title("Launching Simulation")
+        loading_win.attributes("-topmost", True)
+        
+        # Geometry sizing and centering
+        win_w, win_h = 400, 200
+        screen_w = loading_win.winfo_screenwidth()
+        screen_h = loading_win.winfo_screenheight()
+        loading_win.geometry(f"{win_w}x{win_h}+{(screen_w//2)-(win_w//2)}+{(screen_h//2)-(win_h//2)}")
+        loading_win.resizable(False, False)
 
-            # Center-aligned, auto-closing notification
-            notification = tk.Toplevel()
-            notification.title("Launching")
-            label_font = ("Helvetica", 14, "bold") 
-            label = tk.Label(notification, text="Digital Twin is starting...", font=label_font, pady=30, padx=30)
-            label.pack()
+        # UI Content for the Alert Box
+        ctk.CTkLabel(loading_win, text="🌊", font=("Arial", 40)).pack(pady=(20, 5))
+        ctk.CTkLabel(loading_win, text="Starting Digital Twin...", font=FONTS["title"]).pack(pady=5)
+        
+        # The Progress Bar (Indeterminate means it slides back and forth)
+        progress = ctk.CTkProgressBar(loading_win, width=320, mode="indeterminate", progress_color=COLORS["accent"])
+        progress.pack(pady=15)
+        progress.start()
 
-            notification.update_idletasks()
-            width = notification.winfo_width()
-            height = notification.winfo_height()
-            x = (notification.winfo_screenwidth() // 2) - (width // 2)
-            y = (notification.winfo_screenheight() // 2) - (height // 2)
-            notification.geometry(f'{width}x{height}+{x}+{y}')
-
-            notification.after(2000, notification.destroy) 
-
-        except Exception as e:
-            show_error("Error", f"Failed to open Digital Twin:\n{e}")
-            return
-        def wait_for_ready():
+        # 3. BACKGROUND EXECUTION (This is why the code looks cleaner)
+        def launch_and_monitor():
             try:
-                timeout = 10
-                interval = 0.1
-                elapsed = 0
-                while elapsed < timeout:
+                # Start Unity
+                creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+                self.digital_twin_process = subprocess.Popen(
+                    [exe_path],
+                    cwd=os.path.dirname(exe_path),
+                    creationflags=creationflags
+                )
+
+                # Wait for Unity to say "I'm ready" (via ready.txt) or timeout after 8 seconds
+                start_time = time.time()
+                while time.time() - start_time < 8:
                     if os.path.exists(ready_file):
+                        # Add a tiny extra buffer so the user sees the Unity window appear
+                        time.sleep(1.0) 
                         break
-                    time.sleep(interval)
-                    elapsed += interval
+                    time.sleep(0.5)
+
+            except Exception as e:
+                # If launch fails, show error on the main thread
+                self.controller.after(0, lambda: show_error("Launch Error", f"Failed to start: {e}"))
+            
             finally:
+                # Cleanup: Remove the files so they can't be reused
                 for f in [auth_file, ready_file]:
                     if os.path.exists(f):
-                        try:
-                            os.remove(f)
-                        except:
-                            pass
+                        try: os.remove(f)
+                        except: pass
+                
+                # Close the loading window safely on the main thread
+                self.controller.after(0, loading_win.destroy)
 
-        threading.Thread(target=wait_for_ready, daemon=True).start()
+        # Start the thread
+        threading.Thread(target=launch_and_monitor, daemon=True).start()
