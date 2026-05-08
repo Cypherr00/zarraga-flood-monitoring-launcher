@@ -2,8 +2,10 @@
 import customtkinter as ctk
 import socket
 import os
+import sys
 import time
 import threading
+import subprocess
 from utils.dialogs import show_info, show_error
 from utils.ui_styles import COLORS, get_fonts, styled_button
 from navigation import go_to_main_menu
@@ -11,7 +13,7 @@ from navigation import go_to_main_menu
 FONTS = get_fonts()
 
 def is_online():
-    """Returns True if there is an active internet connection, False otherwise."""
+    """Helper to check for internet connectivity."""
     try:
         socket.create_connection(("8.8.8.8", 53), timeout=3)
         return True
@@ -22,11 +24,10 @@ def is_online():
 class LoginPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
-
         self.controller = controller
         self.supabase = controller.supabase
 
-        # UI Configuration
+        # Page Configuration
         self.configure(
             fg_color=COLORS["background"],
             width=300,
@@ -34,172 +35,176 @@ class LoginPage(ctk.CTkFrame):
             corner_radius=16
         )
         self.pack_propagate(False)
-
+        
         self.create_ui()
 
-        # Bind Enter key globally when the page is active
+        # Keyboard Navigation Bindings
         self.bind("<Map>", self._on_map)
         self.bind("<Unmap>", self._on_unmap)
 
     def _on_map(self, event):
-        """When the page is shown, bind the Enter key to the main window."""
         self.winfo_toplevel().bind("<Return>", self._handle_return)
 
     def _on_unmap(self, event):
-        """When leaving the page, remove the binding so it doesn't affect other pages."""
         self.winfo_toplevel().unbind("<Return>")
 
     def _handle_return(self, event):
-        """If focus is on the email entry, move to password. Otherwise, try to log in."""
         if self.focus_get() == self.email_entry:
             self.password_entry.focus()
         else:
             self.login_user()
 
     def create_ui(self):
-        # Title 
-        ctk.CTkLabel(
-            self,
-            text="Flood Monitoring",
-            font=FONTS["title"],
-            text_color=COLORS["text"]
-        ).pack(pady=(30, 4))
+        # Header Section
+        ctk.CTkLabel(self, text="Flood Monitoring", font=FONTS["title"], text_color=COLORS["text"]).pack(pady=(30, 4))
+        ctk.CTkLabel(self, text="Sign in to continue", font=FONTS["label_font"], text_color=COLORS["subtext"]).pack(pady=(0, 20))
 
-        # Subtitle
-        ctk.CTkLabel(
-            self,
-            text="Sign in to continue",
-            font=FONTS["label_font"],
-            text_color=COLORS["subtext"]
-        ).pack(pady=(0, 20))
-
-        # Email Label
-        ctk.CTkLabel(
-            self, 
-            text="Email", 
-            font=FONTS["label_font"], 
-            text_color=COLORS["text"]
-        ).pack(anchor="w", padx=20) 
-        
-        # Email entry
+        # Email Input
+        ctk.CTkLabel(self, text="Email", font=FONTS["label_font"], text_color=COLORS["text"]).pack(anchor="w", padx=20) 
         self.email_entry = ctk.CTkEntry(
-            self,
-            width=260,
-            placeholder_text="Enter your email", 
-            font=FONTS["label_font"],
-            fg_color=COLORS["secondary"],
-            text_color=COLORS["text"]
+            self, width=260, placeholder_text="Enter your email", 
+            font=FONTS["label_font"], fg_color=COLORS["secondary"], text_color=COLORS["text"]
         )
         self.email_entry.pack(pady=(2, 12))
 
-        # Password Label
-        ctk.CTkLabel(
-            self, 
-            text="Password", 
-            font=FONTS["label_font"], 
-            text_color=COLORS["text"]
-        ).pack(anchor="w", padx=20)
-
-        # Password entry
+        # Password Input
+        ctk.CTkLabel(self, text="Password", font=FONTS["label_font"], text_color=COLORS["text"]).pack(anchor="w", padx=20)
         self.password_entry = ctk.CTkEntry(
-            self,
-            width=260,
-            placeholder_text="Enter your password",
-            show="•",
-            font=FONTS["label_font"],
-            fg_color=COLORS["secondary"],
-            text_color=COLORS["text"]
+            self, width=260, placeholder_text="Enter your password", show="•", 
+            font=FONTS["label_font"], fg_color=COLORS["secondary"], text_color=COLORS["text"]
         )
         self.password_entry.pack(pady=(2, 6))
 
-        # Show Password Checkbox
+        # Toggle Password Visibility
         self.show_pass_var = ctk.BooleanVar(value=False)
         ctk.CTkCheckBox(
-            self,
-            text="Show password",
-            font=FONTS["label_font"],
-            text_color=COLORS["subtext"],
-            variable=self.show_pass_var,
-            command=self.toggle_password,
-            checkbox_width=16,
-            checkbox_height=16,
-            border_width=2,
-            fg_color=COLORS["accent"], 
-            hover_color=COLORS["button_hover"]
+            self, text="Show password", font=FONTS["label_font"], 
+            text_color=COLORS["subtext"], variable=self.show_pass_var, 
+            command=self.toggle_password, checkbox_width=16, checkbox_height=16, 
+            border_width=2, fg_color=COLORS["accent"], hover_color=COLORS["button_hover"]
         ).pack(anchor="w", padx=20, pady=(0, 15))
 
-        # Login button
+        # Actions
         styled_button(
-            self,
-            text="Login",
-            command=self.login_user,
-            color=COLORS["button"],
-            hover_color=COLORS["button_hover"],
-            width=260
+            self, text="Login", command=self.login_user, 
+            color=COLORS["button"], hover_color=COLORS["button_hover"], width=260
         ).pack(pady=(10, 12))
-
-        # Forgot password link 
+        
         ctk.CTkButton(
-            self,
-            text="Forgot password?",
-            width=100,
-            fg_color="transparent",
-            border_width=0,
-            text_color=COLORS["accent"],
-            hover_color=COLORS["button_hover"],
-            command=self.forgot_password
+            self, text="Forgot password?", width=100, fg_color="transparent", 
+            border_width=0, text_color=COLORS["accent"], 
+            hover_color=COLORS["button_hover"], command=self.forgot_password
         ).pack()
 
     def toggle_password(self):
-        if self.show_pass_var.get():
-            self.password_entry.configure(show="")
-        else:
-            self.password_entry.configure(show="•")
+        self.password_entry.configure(show="" if self.show_pass_var.get() else "•")
 
     def clear_credentials(self):
-        """Clears the email and password fields for security upon successful login."""
         self.email_entry.delete(0, "end")
         self.password_entry.delete(0, "end")
         self.show_pass_var.set(False)
         self.password_entry.configure(show="•")
 
+    # ========================================================
+    # SMART SYSTEM INITIALIZATION (One-time Handshake)
+    # ========================================================
+    # ========================================================
+    # SMART SYSTEM INITIALIZATION (One-time Handshake)
+    # ========================================================
     def pre_warm_digital_twin(self):
         """
-        Background task to 'pre-heat' the file system.
-        This forces Windows Defender to scan the folder and the OS to cache 
-        the handshake path before the user actually tries to launch the simulation.
+        Runs the Unity handshake only on the first run of the installation.
+        Uses a persistent sentinel file in LocalAppData to track status.
         """
-        def run_warmup():
+        def run_initialization_handshake():
+            # --- PERSISTENT SENTINEL SETUP ---
+            # LocalAppData is permanent storage that survives temp file deletion
+            persistent_dir = os.path.join(os.getenv("LOCALAPPDATA"), "ZarragaFloodMonitoring")
+            os.makedirs(persistent_dir, exist_ok=True)
+            sentinel_file = os.path.join(persistent_dir, "init.done")
+
+            # Check if this installation has already been initialized
+            if os.path.exists(sentinel_file):
+                return # Exit if the sentinel exists
+
+            # --- HANDSHAKE DIRECTORY (Left unchanged for Unity) ---
             appdata = os.getenv("APPDATA") or os.path.expanduser("~")
             auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
+            os.makedirs(auth_dir, exist_ok=True) 
+            
+            # 1. DISGUISE UI
+            warmup_ui = ctk.CTkToplevel(self)
+            warmup_ui.title("System Setup")
+            warmup_ui.attributes("-topmost", True)
+            
+            w, h = 350, 180
+            sw, sh = warmup_ui.winfo_screenwidth(), warmup_ui.winfo_screenheight()
+            warmup_ui.geometry(f"{w}x{h}+{(sw//2)-(w//2)}+{(sh//2)-(h//2)}")
+            warmup_ui.resizable(False, False)
+            
+            ctk.CTkLabel(warmup_ui, text="⚙️", font=("Arial", 30)).pack(pady=(20, 0))
+            ctk.CTkLabel(warmup_ui, text="Finalizing system installation...", font=FONTS["label_font"]).pack(pady=10)
+            p_bar = ctk.CTkProgressBar(warmup_ui, width=280, mode="indeterminate")
+            p_bar.pack(pady=5)
+            p_bar.start()
+
+            # 2. FILE PATHS FOR HANDSHAKE
+            auth_file = os.path.join(auth_dir, "session_auth.txt")
+            ready_file = os.path.join(auth_dir, "ready.txt")
             
             try:
-                # Ensure directory exists
-                if not os.path.exists(auth_dir):
-                    os.makedirs(auth_dir, exist_ok=True)
-                    time.sleep(0.2)
-
-                auth_file = os.path.join(auth_dir, "session_auth.txt")
-                
-                # Write a dummy handshake to trigger OS indexing/Antivirus scan
+                # 3. WRITE THE AUTHORIZED FILE
                 with open(auth_file, "w", encoding="utf-8") as f:
-                    f.write("WARMING_UP")
+                    f.write("AUTHORIZED")
                     f.flush()
                     os.fsync(f.fileno())
-                
-                # Brief pause, then read it back to verify access
-                time.sleep(0.3)
-                if os.path.exists(auth_file):
-                    with open(auth_file, "r") as f:
-                        _ = f.read()
-                
-                # Cleanup: Leave the environment 'warm' but clean
-                os.remove(auth_file)
-            except Exception:
-                pass 
 
-        # Execute in background to keep UI responsive
-        threading.Thread(target=run_warmup, daemon=True).start()
+                # 4. LAUNCH UNITY
+                base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+                exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
+                
+                # Start Unity
+                proc = subprocess.Popen([exe_path], cwd=os.path.dirname(exe_path))
+
+                # 5. WAIT FOR READY FILE
+                start_time = time.time()
+                timeout = 15 
+                handshake_successful = False
+                
+                while time.time() - start_time < timeout:
+                    if os.path.exists(ready_file):
+                        handshake_successful = True
+                        time.sleep(1.5) # Extra buffer for engine stability
+                        break
+                    time.sleep(0.5)
+
+                # 6. TERMINATE UNITY
+                if proc.poll() is None:
+                    proc.terminate()
+
+                # 7. MARK INSTALLATION AS DONE (Create sentinel in persistent storage)
+                if handshake_successful:
+                    with open(sentinel_file, "w", encoding="utf-8") as f:
+                        f.write(f"Initialized on {time.ctime()}")
+                        f.flush()
+                        os.fsync(f.fileno())
+
+            except Exception as e:
+                print(f"[DEBUG] Warmup Error: {e}")
+            
+            finally:
+                # 8. CLEANUP HANDSHAKE EVIDENCE ONLY
+                # (The sentinel file stays in LOCALAPPDATA)
+                for f_path in [auth_file, ready_file]:
+                    if os.path.exists(f_path):
+                        try: os.remove(f_path)
+                        except: pass
+                
+                # Close the loading window
+                self.controller.after(0, warmup_ui.destroy)
+
+        # Run in background
+        threading.Thread(target=run_initialization_handshake, daemon=True).start()
 
     def login_user(self):
         email = self.email_entry.get().strip()
@@ -210,51 +215,43 @@ class LoginPage(ctk.CTkFrame):
             return
 
         try:
-            res = self.supabase.auth.sign_in_with_password({
-                "email": email,
-                "password": password
-            })
+            res = self.supabase.auth.sign_in_with_password({"email": email, "password": password})
             user = getattr(res, "user", None)
-
+            
             if user:
                 self.controller.current_user = user
                 self.controller.current_user_email = user.email
                 
-                # Warm up the file system for the Digital Twin
+                # Trigger First-Time Warmup
                 self.pre_warm_digital_twin()
                 
-                show_info("Login Successful", "Welcome to FloodTwin!")
+                show_info("Login Successful", "Welcome back!")
                 self.clear_credentials()
                 go_to_main_menu(controller=self.controller)
             else:
-                show_error("Login Failed", "Invalid email or password.")
+                show_error("Login Failed", "Invalid credentials.")
 
         except Exception as e:
-            # Handle Offline Mode Check
             if email == "zarraga@offline.com" and password == "admin0":
                 if not is_online():
                     self.controller.current_user_email = email 
                     self.pre_warm_digital_twin()
-                    show_info("Offline Mode", "Logged in using offline mode.")
+                    show_info("Offline Mode", "Access granted.")
                     self.clear_credentials()
                     go_to_main_menu(controller=self.controller)
                 else:
-                    show_error("Login Error", "This offline account can only be used when disconnected from the internet.")
+                    show_error("Error", "Offline account requires internet to be disabled.")
             else:
                 show_error("Login Error", str(e))
-                
+
     def forgot_password(self):
         email = self.email_entry.get().strip()
         if not email:
-            show_error("Missing Email", "Please enter your email.")
+            show_error("Missing Email", "Please enter your email address.")
             return
-
         try:
             redirect = "https://zarraga-reset-password-vercel.vercel.app/"
-            self.supabase.auth.reset_password_for_email(
-                email,
-                options={"redirect_to": redirect}
-            )
-            show_info("Password Reset", "A reset link has been sent to your email.")
+            self.supabase.auth.reset_password_for_email(email, options={"redirect_to": redirect})
+            show_info("Reset Email Sent", "Check your inbox.")
         except Exception as e:
             show_error("Error", str(e))

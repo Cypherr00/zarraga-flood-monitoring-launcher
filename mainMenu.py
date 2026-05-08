@@ -206,7 +206,8 @@ class MainMenuPage(ctk.CTkFrame):
 
     # =========================================
     # DIGITAL TWIN LOGIC
-    # =========================================def open_digital_twin(self):
+    # =========================================
+    def open_digital_twin(self):
         import time
         import threading
         import tkinter as tk # Still needed for some screen metrics

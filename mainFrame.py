@@ -102,10 +102,10 @@ class MainFrame(ctk.CTk):
         # -------------------------------------------------
         self.version_label = ctk.CTkLabel(
             self, 
-            text="v1.0.7", 
+            text="v1.0.8", 
             font=("Arial", 11, "bold"),
             text_color="black",
-            fg_color="transparent"
+            fg_color="grey"
         )
         self.version_label.place(relx=1.0, rely=1.0, anchor="se", x=-10, y=-10)
 
