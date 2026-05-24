@@ -6,11 +6,17 @@ import sys
 import time
 import threading
 import subprocess
+import glob
 from utils.dialogs import show_info, show_error
 from utils.ui_styles import COLORS, get_fonts, styled_button
 from navigation import go_to_main_menu
 
 FONTS = get_fonts()
+
+# ========================================================
+# VERSION CONFIGURATION
+# ========================================================
+APP_VERSION = "1.1.0" 
 
 def is_online():
     """Helper to check for internet connectivity."""
@@ -106,33 +112,40 @@ class LoginPage(ctk.CTkFrame):
         self.password_entry.configure(show="•")
 
     # ========================================================
-    # SMART SYSTEM INITIALIZATION (One-time Handshake)
-    # ========================================================
-    # ========================================================
-    # SMART SYSTEM INITIALIZATION (One-time Handshake)
+    # SMART SYSTEM INITIALIZATION (Version-Aware Handshake)
     # ========================================================
     def pre_warm_digital_twin(self):
         """
-        Runs the Unity handshake only on the first run of the installation.
-        Uses a persistent sentinel file in LocalAppData to track status.
+        Launches Unity in hidden mode on first install to cache shaders/assets.
+        The sentinel is stored in the install directory so it dies with an uninstall.
         """
         def run_initialization_handshake():
-            # --- PERSISTENT SENTINEL SETUP ---
-            # LocalAppData is permanent storage that survives temp file deletion
-            persistent_dir = os.path.join(os.getenv("LOCALAPPDATA"), "ZarragaFloodMonitoring")
-            os.makedirs(persistent_dir, exist_ok=True)
-            sentinel_file = os.path.join(persistent_dir, "init.done")
+            # 1. FIND THE INSTALLATION ROOT
+            # If frozen (compiled to exe), use the exe folder; otherwise use the script folder.
+            if getattr(sys, 'frozen', False):
+                app_root = os.path.dirname(sys.executable)
+            else:
+                # We go up one level from system_pages to reach the app root
+                app_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-            # Check if this installation has already been initialized
+            # Move sentinel here so the uninstaller cleans it up automatically
+            sentinel_file = os.path.join(app_root, f"init_v{APP_VERSION}.done")
+
             if os.path.exists(sentinel_file):
-                return # Exit if the sentinel exists
+                print(f"[DEBUG] Version {APP_VERSION} already initialized. Skipping.")
+                return 
 
-            # --- HANDSHAKE DIRECTORY (Left unchanged for Unity) ---
+            # Cleanup old 'init_v*.done' files from the root
+            for old in glob.glob(os.path.join(app_root, "init_v*.done")):
+                try: os.remove(old)
+                except: pass
+
+            # --- HANDSHAKE DIRECTORY ---
             appdata = os.getenv("APPDATA") or os.path.expanduser("~")
             auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
             os.makedirs(auth_dir, exist_ok=True) 
             
-            # 1. DISGUISE UI
+            # 2. DISGUISE UI
             warmup_ui = ctk.CTkToplevel(self)
             warmup_ui.title("System Setup")
             warmup_ui.attributes("-topmost", True)
@@ -143,67 +156,84 @@ class LoginPage(ctk.CTkFrame):
             warmup_ui.resizable(False, False)
             
             ctk.CTkLabel(warmup_ui, text="⚙️", font=("Arial", 30)).pack(pady=(20, 0))
-            ctk.CTkLabel(warmup_ui, text="Finalizing system installation...", font=FONTS["label_font"]).pack(pady=10)
-            p_bar = ctk.CTkProgressBar(warmup_ui, width=280, mode="indeterminate")
+            ctk.CTkLabel(warmup_ui, text=f"Optimizing Simulation (v{APP_VERSION})...", font=FONTS["label_font"]).pack(pady=10)
+            p_bar = ctk.CTkProgressBar(warmup_ui, width=280, mode="indeterminate", progress_color=COLORS["accent"])
             p_bar.pack(pady=5)
             p_bar.start()
 
-            # 2. FILE PATHS FOR HANDSHAKE
             auth_file = os.path.join(auth_dir, "session_auth.txt")
             ready_file = os.path.join(auth_dir, "ready.txt")
             
             try:
-                # 3. WRITE THE AUTHORIZED FILE
+                # 3. PRE-CLEAN & WRITE HANDSHAKE
+                for f in [auth_file, ready_file]:
+                    if os.path.exists(f): os.remove(f)
+
                 with open(auth_file, "w", encoding="utf-8") as f:
                     f.write("AUTHORIZED")
                     f.flush()
-                    os.fsync(f.fileno())
+                    os.fsync(f.fileno()) # Force write to physical disk
 
-                # 4. LAUNCH UNITY
+                time.sleep(1.0) # OS stability buffer
+
+                # 4. LAUNCH UNITY HIDDEN
                 base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
                 exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
                 
-                # Start Unity
-                proc = subprocess.Popen([exe_path], cwd=os.path.dirname(exe_path))
+                # Use STARTUPINFO to hide the Unity window during warmup
+                startup_info = subprocess.STARTUPINFO()
+                startup_info.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+                startup_info.wShowWindow = 0 # SW_HIDE
 
-                # 5. WAIT FOR READY FILE
+                proc = subprocess.Popen(
+                    [exe_path, "--auth-token", "AUTHORIZED"], 
+                    cwd=os.path.dirname(exe_path),
+                    startupinfo=startup_info
+                )
+
+                # 5. WAIT FOR READY SIGNAL
                 start_time = time.time()
-                timeout = 15 
+                timeout = 30 
                 handshake_successful = False
                 
                 while time.time() - start_time < timeout:
                     if os.path.exists(ready_file):
                         handshake_successful = True
-                        time.sleep(1.5) # Extra buffer for engine stability
+                        time.sleep(3.0) # Let Unity finish building caches
+                        break
+                    if proc.poll() is not None:
                         break
                     time.sleep(0.5)
 
-                # 6. TERMINATE UNITY
+                # 6. FORCE TERMINATION
                 if proc.poll() is None:
-                    proc.terminate()
+                    proc.kill()
 
-                # 7. MARK INSTALLATION AS DONE (Create sentinel in persistent storage)
+                # 7. MARK THIS VERSION AS DONE (In the install root)
                 if handshake_successful:
-                    with open(sentinel_file, "w", encoding="utf-8") as f:
-                        f.write(f"Initialized on {time.ctime()}")
-                        f.flush()
-                        os.fsync(f.fileno())
+                    try:
+                        with open(sentinel_file, "w", encoding="utf-8") as f:
+                            f.write(f"Initialized v{APP_VERSION} on {time.ctime()}")
+                            f.flush()
+                            os.fsync(f.fileno())
+                    except PermissionError:
+                        # Fallback to localappdata if install root is read-only (Program Files)
+                        fallback_dir = os.path.join(os.getenv("LOCALAPPDATA"), "ZarragaFloodMonitoring")
+                        os.makedirs(fallback_dir, exist_ok=True)
+                        with open(os.path.join(fallback_dir, os.path.basename(sentinel_file)), "w") as f:
+                            f.write("FALLBACK_PERMISSION_OK")
 
             except Exception as e:
                 print(f"[DEBUG] Warmup Error: {e}")
             
             finally:
-                # 8. CLEANUP HANDSHAKE EVIDENCE ONLY
-                # (The sentinel file stays in LOCALAPPDATA)
+                time.sleep(1.0)
                 for f_path in [auth_file, ready_file]:
                     if os.path.exists(f_path):
                         try: os.remove(f_path)
                         except: pass
-                
-                # Close the loading window
                 self.controller.after(0, warmup_ui.destroy)
 
-        # Run in background
         threading.Thread(target=run_initialization_handshake, daemon=True).start()
 
     def login_user(self):
@@ -221,10 +251,7 @@ class LoginPage(ctk.CTkFrame):
             if user:
                 self.controller.current_user = user
                 self.controller.current_user_email = user.email
-                
-                # Trigger First-Time Warmup
-                self.pre_warm_digital_twin()
-                
+                self.pre_warm_digital_twin() # Trigger Handshake Check
                 show_info("Login Successful", "Welcome back!")
                 self.clear_credentials()
                 go_to_main_menu(controller=self.controller)
@@ -232,6 +259,7 @@ class LoginPage(ctk.CTkFrame):
                 show_error("Login Failed", "Invalid credentials.")
 
         except Exception as e:
+            # Offline Bypass for Admin
             if email == "zarraga@offline.com" and password == "admin0":
                 if not is_online():
                     self.controller.current_user_email = email 

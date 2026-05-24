@@ -208,10 +208,6 @@ class MainMenuPage(ctk.CTkFrame):
     # DIGITAL TWIN LOGIC
     # =========================================
     def open_digital_twin(self):
-        import time
-        import threading
-        import tkinter as tk # Still needed for some screen metrics
-
         base_path = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
         exe_path = os.path.join(base_path, "ZarragaFloodMonitoringAndSimulation", "Zarraga Flood Simulation.exe")
 
@@ -220,18 +216,21 @@ class MainMenuPage(ctk.CTkFrame):
             return
 
         if not os.path.exists(exe_path):
-            show_error("Error", f"Digital Twin executable not found:\n{exe_path}")
+            show_error("Error", f"Executable not found:\n{exe_path}")
             return
 
-        # Prepare Shared Mailbox Paths
+        # Paths
         appdata = os.getenv("APPDATA") or os.path.expanduser("~")
         auth_dir = os.path.join(appdata, "ZarragaFloodMonitoring")
         auth_file = os.path.join(auth_dir, "session_auth.txt")
         ready_file = os.path.join(auth_dir, "ready.txt")
 
-        # 1. THE HANDSHAKE (Writing the Key)
+        # 1. THE HANDSHAKE
         try:
             os.makedirs(auth_dir, exist_ok=True)
+            # Ensure any old ready files are gone before we start
+            if os.path.exists(ready_file): os.remove(ready_file)
+            
             with open(auth_file, "w", encoding="utf-8") as f:
                 f.write("AUTHORIZED")
                 f.flush()
@@ -240,61 +239,62 @@ class MainMenuPage(ctk.CTkFrame):
             show_error("Error", f"Handshake failed: {e}")
             return
 
-        # 2. CREATE MODERN UI ALERT
-        # We use CTkToplevel so it matches your theme (Dark/Light)
+        # 2. UI ALERT
         loading_win = ctk.CTkToplevel(self)
-        loading_win.title("Launching Simulation")
+        loading_win.title("Launching...")
         loading_win.attributes("-topmost", True)
-        
-        # Geometry sizing and centering
+        # (Centering logic remains same...)
         win_w, win_h = 400, 200
         screen_w = loading_win.winfo_screenwidth()
         screen_h = loading_win.winfo_screenheight()
         loading_win.geometry(f"{win_w}x{win_h}+{(screen_w//2)-(win_w//2)}+{(screen_h//2)-(win_h//2)}")
-        loading_win.resizable(False, False)
-
-        # UI Content for the Alert Box
+        
         ctk.CTkLabel(loading_win, text="🌊", font=("Arial", 40)).pack(pady=(20, 5))
         ctk.CTkLabel(loading_win, text="Starting Digital Twin...", font=FONTS["title"]).pack(pady=5)
-        
-        # The Progress Bar (Indeterminate means it slides back and forth)
         progress = ctk.CTkProgressBar(loading_win, width=320, mode="indeterminate", progress_color=COLORS["accent"])
         progress.pack(pady=15)
         progress.start()
 
-        # 3. BACKGROUND EXECUTION (This is why the code looks cleaner)
+        # 3. BACKGROUND EXECUTION
         def launch_and_monitor():
             try:
-                # Start Unity
+                # We pass the token as a CLI argument AS WELL as a file. 
+                # This gives Unity two ways to verify, making it 100% stable.
                 creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
                 self.digital_twin_process = subprocess.Popen(
-                    [exe_path],
+                    [exe_path, "--auth-token", "AUTHORIZED"], 
                     cwd=os.path.dirname(exe_path),
                     creationflags=creationflags
                 )
 
-                # Wait for Unity to say "I'm ready" (via ready.txt) or timeout after 8 seconds
                 start_time = time.time()
-                while time.time() - start_time < 8:
+                success = False
+                while time.time() - start_time < 12: # Increased timeout to 12s
                     if os.path.exists(ready_file):
-                        # Add a tiny extra buffer so the user sees the Unity window appear
-                        time.sleep(1.0) 
+                        # FIX: The "Grace Period"
+                        # Wait 2 seconds AFTER ready.txt appears to ensure Unity 
+                        # has finished all its internal file I/O operations.
+                        time.sleep(2.0) 
+                        success = True
+                        break
+                    
+                    # Check if Unity crashed immediately
+                    if self.digital_twin_process.poll() is not None:
                         break
                     time.sleep(0.5)
 
             except Exception as e:
-                # If launch fails, show error on the main thread
-                self.controller.after(0, lambda: show_error("Launch Error", f"Failed to start: {e}"))
+                self.controller.after(0, lambda: show_error("Launch Error", str(e)))
             
             finally:
-                # Cleanup: Remove the files so they can't be reused
-                for f in [auth_file, ready_file]:
-                    if os.path.exists(f):
-                        try: os.remove(f)
-                        except: pass
+                # FIX: Safer Cleanup
+                # We only delete the ready file. 
+                # Ideally, Unity should be the one to delete session_auth.txt 
+                # once it's done reading it.
+                try:
+                    if os.path.exists(ready_file): os.remove(ready_file)
+                except: pass
                 
-                # Close the loading window safely on the main thread
                 self.controller.after(0, loading_win.destroy)
 
-        # Start the thread
         threading.Thread(target=launch_and_monitor, daemon=True).start()
